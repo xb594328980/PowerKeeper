@@ -1,0 +1,14 @@
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Tests\bin\Debug\netcoreapp2.1\PowerKeeper.Tests.deps.json
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Tests\bin\Debug\netcoreapp2.1\PowerKeeper.Tests.runtimeconfig.json
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Tests\bin\Debug\netcoreapp2.1\PowerKeeper.Tests.runtimeconfig.dev.json
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Tests\bin\Debug\netcoreapp2.1\PowerKeeper.Tests.dll
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Tests\bin\Debug\netcoreapp2.1\PowerKeeper.Tests.pdb
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Tests\obj\Debug\netcoreapp2.1\PowerKeeper.Tests.csprojAssemblyReference.cache
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Tests\obj\Debug\netcoreapp2.1\PowerKeeper.Tests.csproj.CoreCompileInputs.cache
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Tests\obj\Debug\netcoreapp2.1\PowerKeeper.Tests.AssemblyInfoInputs.cache
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Tests\obj\Debug\netcoreapp2.1\PowerKeeper.Tests.AssemblyInfo.cs
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Tests\obj\Debug\netcoreapp2.1\PowerKeeper.Tests.dll
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Tests\obj\Debug\netcoreapp2.1\PowerKeeper.Tests.pdb

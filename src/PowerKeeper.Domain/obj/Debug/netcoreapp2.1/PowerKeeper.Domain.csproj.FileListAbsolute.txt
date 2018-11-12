@@ -1,0 +1,8 @@
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.deps.json
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.dll
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.pdb
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.csproj.CoreCompileInputs.cache
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.AssemblyInfoInputs.cache
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.AssemblyInfo.cs
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.dll
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.pdb
