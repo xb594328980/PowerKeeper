@@ -1,8 +1,0 @@
-D:\OtherWork\PowerKeeper\src\PowerKeeper.Infrastruct.Data\bin\Debug\netcoreapp2.1\PowerKeeper.Infrastruct.Data.deps.json
-D:\OtherWork\PowerKeeper\src\PowerKeeper.Infrastruct.Data\bin\Debug\netcoreapp2.1\PowerKeeper.Infrastruct.Data.dll
-D:\OtherWork\PowerKeeper\src\PowerKeeper.Infrastruct.Data\bin\Debug\netcoreapp2.1\PowerKeeper.Infrastruct.Data.pdb
-D:\OtherWork\PowerKeeper\src\PowerKeeper.Infrastruct.Data\obj\Debug\netcoreapp2.1\PowerKeeper.Infrastruct.Data.csproj.CoreCompileInputs.cache
-D:\OtherWork\PowerKeeper\src\PowerKeeper.Infrastruct.Data\obj\Debug\netcoreapp2.1\PowerKeeper.Infrastruct.Data.AssemblyInfoInputs.cache
-D:\OtherWork\PowerKeeper\src\PowerKeeper.Infrastruct.Data\obj\Debug\netcoreapp2.1\PowerKeeper.Infrastruct.Data.AssemblyInfo.cs
-D:\OtherWork\PowerKeeper\src\PowerKeeper.Infrastruct.Data\obj\Debug\netcoreapp2.1\PowerKeeper.Infrastruct.Data.dll
-D:\OtherWork\PowerKeeper\src\PowerKeeper.Infrastruct.Data\obj\Debug\netcoreapp2.1\PowerKeeper.Infrastruct.Data.pdb

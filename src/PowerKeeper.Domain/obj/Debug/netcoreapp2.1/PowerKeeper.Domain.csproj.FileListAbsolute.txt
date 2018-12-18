@@ -6,3 +6,7 @@ D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKee
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.AssemblyInfo.cs
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.pdb
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.csprojAssemblyReference.cache
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.dll
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.pdb
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.csproj.CopyComplete

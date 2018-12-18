@@ -4,4 +4,37 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PowerKeeper.Domain.Core\PowerKeeper.Domain.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\Application\" />
+    <Folder Include="Commands\Dict\" />
+    <Folder Include="Commands\Resource\" />
+    <Folder Include="Commands\Role\" />
+    <Folder Include="Commands\Staff\" />
+    <Folder Include="Commands\Systemes\" />
+    <Folder Include="Events\Application\" />
+    <Folder Include="Events\Dict\" />
+    <Folder Include="Events\Office\" />
+    <Folder Include="Events\Resource\" />
+    <Folder Include="Events\Role\" />
+    <Folder Include="Events\Staff\" />
+    <Folder Include="Events\Systemes\" />
+    <Folder Include="Validations\Application\" />
+    <Folder Include="Validations\Dict\" />
+    <Folder Include="Validations\Office\" />
+    <Folder Include="Validations\Resource\" />
+    <Folder Include="Validations\Role\" />
+    <Folder Include="Validations\Staff\" />
+    <Folder Include="Validations\Systemes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.caching.abstractions\2.1.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
