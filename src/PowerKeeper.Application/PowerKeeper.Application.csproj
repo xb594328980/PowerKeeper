@@ -8,4 +8,13 @@
     <PackageReference Include="AutoMapper" Version="8.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="EventSourcing\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PowerKeeper.Domain.Core\PowerKeeper.Domain.Core.csproj" />
+    <ProjectReference Include="..\PowerKeeper.Domain\PowerKeeper.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

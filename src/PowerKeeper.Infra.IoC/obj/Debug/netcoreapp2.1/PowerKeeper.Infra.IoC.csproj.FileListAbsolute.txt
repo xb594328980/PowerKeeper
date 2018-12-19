@@ -1,8 +1,5 @@
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.deps.json
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.dll
-D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.csproj.CoreCompileInputs.cache
-D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.AssemblyInfoInputs.cache
-D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.AssemblyInfo.cs
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Application.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.dll
@@ -10,13 +7,18 @@ D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\Power
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Aop.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Data.dll
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Application.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Aop.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Data.pdb
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.csprojAssemblyReference.cache
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.csproj.CoreCompileInputs.cache
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.AssemblyInfoInputs.cache
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.AssemblyInfo.cs
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.csproj.CopyComplete
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.pdb

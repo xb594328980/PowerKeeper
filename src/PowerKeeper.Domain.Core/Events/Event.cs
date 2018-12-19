@@ -29,5 +29,13 @@ namespace PowerKeeper.Domain.Core.Events
         {
             Timestamp = DateTime.Now;
         }
+        protected Event(Guid aggregateId, string messageType, DateTime? timestamp = null) : this()
+        {
+            AggregateId = aggregateId;
+            MessageType = messageType;
+            if (timestamp.HasValue)
+                Timestamp = timestamp.Value;
+
+        }
     }
 }

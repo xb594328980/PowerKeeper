@@ -19,7 +19,7 @@ namespace PowerKeeper.Domain.CommandHandlers
         // 注入工作单元
         private readonly IUnitOfWork _uow;
         // 注入中介处理接口
-        private readonly IMediatorHandler _bus;
+        protected readonly IMediatorHandler _bus;
 
         /// <summary>
         /// 构造函数注入

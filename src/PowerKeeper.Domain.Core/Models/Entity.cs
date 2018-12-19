@@ -15,35 +15,7 @@ namespace PowerKeeper.Domain.Core.Models
         /// </summary>
         public Guid Id { get; protected set; }
 
-        /// <summary>
-        /// 创建人
-        /// </summary>
-        public Guid CreateBy { get; protected set; }
-
-        /// <summary>
-        /// 编辑人
-        /// </summary>
-        public Guid? UpdateBy { get; protected set; }
-
-        /// <summary>
-        /// 创建日期
-        /// </summary>
-        public DateTime CreateDate { get; protected set; }
-
-        /// <summary>
-        /// 编辑日期
-        /// </summary>
-        public DateTime? UpdateDate { get; protected set; }
-
-        /// <summary>
-        /// 备注
-        /// </summary>
-        public string Remark { get; protected set; }
-
-        /// <summary>
-        /// 删除标志
-        /// </summary>
-        public int DelFlag { get; protected set; }
+       
         /// <summary>
         /// 重写方法 相等运算
         /// </summary>
