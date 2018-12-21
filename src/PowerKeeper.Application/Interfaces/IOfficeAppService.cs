@@ -15,34 +15,32 @@ namespace PowerKeeper.Application.Interfaces
         /// 新增
         /// <remarks>create by xingbo 18/12/19</remarks>
         /// </summary>
-        /// <param name="classViewModel"></param>
-        void Add(OfficeViewModel classViewModel);
+        /// <param name="officeViewModel"></param>
+        void Add(OfficeViewModel officeViewModel);
         /// <summary>
         /// 获取全部
         /// <remarks>create by xingbo 18/12/19</remarks>
         /// <remarks></remarks>
         /// </summary>
-        /// <param name="classViewModel"></param>
         IEnumerable<OfficeViewModel> GetAll();
         /// <summary>
         /// 获取单条
         /// <remarks>create by xingbo 18/12/19</remarks>
         /// <remarks></remarks>
         /// </summary>
-        /// <param name="classViewModel"></param>
         OfficeViewModel GetById(Guid id);
         /// <summary>
         /// 更新
         /// <remarks>create by xingbo 18/12/19</remarks>
         /// <remarks></remarks>
         /// </summary>
-        /// <param name="classViewModel"></param>
-        void Update(OfficeViewModel classViewModel);
+        /// <param name="officeViewModel"></param>
+        void Update(OfficeViewModel officeViewModel);
         /// <summary>
         /// 删除
         /// <remarks>create by xingbo 18/12/19</remarks>
         /// </summary>
-        /// <param name="classViewModel"></param>
-        void Remove(OfficeViewModel classViewModel);
+        /// <param name="officeViewModel"></param>
+        void Remove(OfficeViewModel officeViewModel);
     }
 }

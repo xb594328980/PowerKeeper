@@ -11,10 +11,9 @@ namespace PowerKeeper.Infra.Data.Repository
     /// 仓储基类
     /// <remarks>create by xingbo 18/12/19</remarks>
     /// </summary>
-    /// <typeparam name="TEntity"></typeparam>
     public class OfficeRepository : Repository<Office>, IOfficeRepository
     {
-        public OfficeRepository(PowerKeeperContext _db) : base(_db)
+        public OfficeRepository(PowerKeeperContext db) : base(db)
         {
 
         }

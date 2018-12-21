@@ -5,7 +5,7 @@ using System.Text;
 using PowerKeeper.Application.ViewModels;
 using PowerKeeper.Domain.Models;
 
-namespace PowerKeeper.Application.AutoMapper
+namespace PowerKeeper.Infra.Mapper
 {
     public class DomainToViewModelMappingProfile : Profile
     {

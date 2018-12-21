@@ -9,7 +9,7 @@ using PowerKeeper.Infra.Data.Context;
 namespace PowerKeeper.Infra.Data.Migrations
 {
     [DbContext(typeof(PowerKeeperContext))]
-    [Migration("20181219043947_Init")]
+    [Migration("20181220081158_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -80,6 +80,8 @@ namespace PowerKeeper.Infra.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("sys_office");
+
+                    b.HasAnnotation("MySQL:Charset", "utf8mb4");
                 });
 #pragma warning restore 612, 618
         }

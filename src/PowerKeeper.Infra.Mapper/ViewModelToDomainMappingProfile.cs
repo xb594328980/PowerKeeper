@@ -3,7 +3,7 @@ using PowerKeeper.Application.ViewModels;
 using PowerKeeper.Domain.Commands.Office;
 using PowerKeeper.Domain.Models;
 
-namespace PowerKeeper.Application.AutoMapper
+namespace PowerKeeper.Infra.Mapper
 {
     public class ViewModelToDomainMappingProfile : Profile
     {

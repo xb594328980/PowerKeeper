@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using PowerKeeper.Domain.Validations.Office;
 
 namespace PowerKeeper.Domain.Commands.Office
 {
@@ -37,7 +38,8 @@ namespace PowerKeeper.Domain.Commands.Office
         }
         public override bool IsValid()
         {
-            throw new NotImplementedException();
+            ValidationResult = new UpdateOfficeValidation().Validate(this);
+            return ValidationResult.IsValid;
         }
     }
 }

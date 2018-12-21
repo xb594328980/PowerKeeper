@@ -39,7 +39,12 @@ namespace PowerKeeper.Domain.Interfaces
         /// </summary>
         /// <param name="objList"></param>
         void Update(params TEntity[] objList);
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <param name="fieldNames"></param>
+        void Update(TEntity entity, List<string> fieldNames = null);
 
         /// <summary>
         /// 根据id删除

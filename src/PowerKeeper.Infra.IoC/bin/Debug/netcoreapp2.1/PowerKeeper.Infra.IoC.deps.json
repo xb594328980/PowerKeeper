@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "bef28145d556fd789b4eaaa0c1c32fd65b6ae480"
+    "signature": "90148504533bd1b60b0d0c62f4443c2132482a3d"
   },
   "compilationOptions": {},
   "targets": {
@@ -139,14 +139,6 @@
           "lib/netstandard2.0/FluentValidation.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.1.1.0"
-          }
-        }
-      },
-      "Google.Protobuf/3.5.1": {
-        "runtime": {
-          "lib/netstandard1.0/Google.Protobuf.dll": {
-            "assemblyVersion": "3.5.1.0",
-            "fileVersion": "3.5.1.0"
           }
         }
       },
@@ -312,19 +304,6 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/2.1.2": {},
-      "Microsoft.EntityFrameworkCore.Design/1.1.6": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
-          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.6",
-          "System.Collections.NonGeneric": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "1.1.6.0",
-            "fileVersion": "1.1.6.40621"
-          }
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/2.1.2": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.2"
@@ -336,14 +315,14 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
+      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.1": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "2.1.2"
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {
-            "assemblyVersion": "1.1.6.0",
-            "fileVersion": "1.1.6.40621"
+            "assemblyVersion": "1.1.1.0",
+            "fileVersion": "1.1.1.30217"
           }
         }
       },
@@ -526,6 +505,18 @@
           }
         }
       },
+      "Microsoft.Extensions.Logging.Console/1.1.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
+          "Microsoft.Extensions.Logging.Abstractions": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.Extensions.Logging.Console.dll": {
+            "assemblyVersion": "1.1.1.0",
+            "fileVersion": "1.1.1.30217"
+          }
+        }
+      },
       "Microsoft.Extensions.ObjectPool/2.1.1": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll": {
@@ -581,42 +572,11 @@
           }
         }
       },
-      "MySql.Data/8.0.13": {
-        "dependencies": {
-          "Google.Protobuf": "3.5.1",
-          "System.Configuration.ConfigurationManager": "4.4.1",
-          "System.Security.Permissions": "4.4.1",
-          "System.Text.Encoding.CodePages": "4.5.0"
-        },
+      "MySqlConnector/0.44.1": {
         "runtime": {
-          "lib/netcoreapp2.0/MySql.Data.dll": {
-            "assemblyVersion": "8.0.13.0",
-            "fileVersion": "8.0.13.0"
-          }
-        }
-      },
-      "MySql.Data.EntityFrameworkCore/8.0.13": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "2.1.2",
-          "MySql.Data": "8.0.13"
-        },
-        "runtime": {
-          "lib/netstandard2.0/MySql.Data.EntityFrameworkCore.dll": {
-            "assemblyVersion": "8.0.13.0",
-            "fileVersion": "8.0.13.0"
-          }
-        }
-      },
-      "MySql.Data.EntityFrameworkCore.Design/8.0.13": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "1.1.6",
-          "MySql.Data": "8.0.13",
-          "MySql.Data.EntityFrameworkCore": "8.0.13"
-        },
-        "runtime": {
-          "lib/netstandard1.6/MySql.Data.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "8.0.13.0",
-            "fileVersion": "8.0.13.0"
+          "lib/netcoreapp2.1/MySqlConnector.dll": {
+            "assemblyVersion": "0.44.1.0",
+            "fileVersion": "0.44.1.0"
           }
         }
       },
@@ -625,6 +585,46 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.1.22727"
+          }
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/2.1.2": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.2",
+          "MySqlConnector": "0.44.1",
+          "Pomelo.JsonObject": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "assemblyVersion": "2.1.2.0",
+            "fileVersion": "2.1.2.0"
+          }
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql.Design/1.1.2": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.1",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "Microsoft.Extensions.Logging.Console": "1.1.1",
+          "MySqlConnector": "0.44.1",
+          "Pomelo.EntityFrameworkCore.MySql": "2.1.2"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Pomelo.EntityFrameworkCore.MySql.Design.dll": {
+            "assemblyVersion": "1.1.1.0",
+            "fileVersion": "1.1.1.0"
+          }
+        }
+      },
+      "Pomelo.JsonObject/2.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.JsonObject.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
           }
         }
       },
@@ -670,16 +670,6 @@
         }
       },
       "System.Collections.Immutable/1.5.0": {},
-      "System.Collections.NonGeneric/4.3.0": {
-        "dependencies": {
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        }
-      },
       "System.ComponentModel/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -691,17 +681,6 @@
           "System.ComponentModel": "4.3.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0"
-        }
-      },
-      "System.Configuration.ConfigurationManager/4.4.1": {
-        "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "4.4.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25921.2"
-          }
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -857,60 +836,6 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Security.AccessControl/4.4.0": {
-        "dependencies": {
-          "System.Security.Principal.Windows": "4.4.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
-      "System.Security.Cryptography.ProtectedData/4.4.0": {
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.25519.3"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.25519.3"
-          }
-        }
-      },
-      "System.Security.Permissions/4.4.1": {
-        "dependencies": {
-          "System.Security.AccessControl": "4.4.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Permissions.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25921.2"
-          }
-        }
-      },
-      "System.Security.Principal.Windows/4.4.0": {
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -1001,8 +926,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.2",
           "Microsoft.Extensions.Configuration.Json": "2.1.1",
-          "MySql.Data.EntityFrameworkCore": "8.0.13",
-          "MySql.Data.EntityFrameworkCore.Design": "8.0.13",
+          "Pomelo.EntityFrameworkCore.MySql": "2.1.2",
+          "Pomelo.EntityFrameworkCore.MySql.Design": "1.1.2",
           "PowerKeeper.Domain": "1.0.0"
         },
         "runtime": {
@@ -1106,13 +1031,6 @@
       "path": "fluentvalidation/8.1.1",
       "hashPath": "fluentvalidation.8.1.1.nupkg.sha512"
     },
-    "Google.Protobuf/3.5.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-j/gbpRZ68sgvdi/vXI39Cj/jWG4d1dtDqfWbkjC9dErNWu/dFcIlq1LIgLscea+llZ6nzm06wz/JGziOegAL7Q==",
-      "path": "google.protobuf/3.5.1",
-      "hashPath": "google.protobuf.3.5.1.nupkg.sha512"
-    },
     "IdentityModel/3.10.2": {
       "type": "package",
       "serviceable": true,
@@ -1211,13 +1129,6 @@
       "path": "microsoft.entityframeworkcore.analyzers/2.1.2",
       "hashPath": "microsoft.entityframeworkcore.analyzers.2.1.2.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Design/1.1.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-R/wSpgJQajvTqzUm5vOC+OpMngBWFfbLf8W2Vbsoc02hMSMTe+jdL0t02HeXxnYjO+ZK5/89tQhshXIgRSuvGQ==",
-      "path": "microsoft.entityframeworkcore.design/1.1.6",
-      "hashPath": "microsoft.entityframeworkcore.design.1.1.6.nupkg.sha512"
-    },
     "Microsoft.EntityFrameworkCore.Relational/2.1.2": {
       "type": "package",
       "serviceable": true,
@@ -1225,12 +1136,12 @@
       "path": "microsoft.entityframeworkcore.relational/2.1.2",
       "hashPath": "microsoft.entityframeworkcore.relational.2.1.2.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
+    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UVq94HrsK/eUSo4bkYBYW30UQ/uH2GoXcjTv7oIdeMKnAjLE3jm3C/BmftkQpr9beQCSbbcEySaVDhjlhrcQJQ==",
-      "path": "microsoft.entityframeworkcore.relational.design/1.1.6",
-      "hashPath": "microsoft.entityframeworkcore.relational.design.1.1.6.nupkg.sha512"
+      "sha512": "sha512-uiG9/9FlAY0gSFms0m2LPGYCnOuAVqiiUtLxcipPW0nlNxI3GTRgo7te1lhyOSiEmYEMOF6O6bk+mE6Nmfga3A==",
+      "path": "microsoft.entityframeworkcore.relational.design/1.1.1",
+      "hashPath": "microsoft.entityframeworkcore.relational.design.1.1.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/2.1.1": {
       "type": "package",
@@ -1344,6 +1255,13 @@
       "path": "microsoft.extensions.logging.abstractions/2.1.1",
       "hashPath": "microsoft.extensions.logging.abstractions.2.1.1.nupkg.sha512"
     },
+    "Microsoft.Extensions.Logging.Console/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dQsVIFMZMG17/k01j5M/32A29d1YUmoJLPOiVj8Tl/awpPNzBcqsMd4WipelyqFICmxoEhnDxA3OdZoBH21A0w==",
+      "path": "microsoft.extensions.logging.console/1.1.1",
+      "hashPath": "microsoft.extensions.logging.console.1.1.1.nupkg.sha512"
+    },
     "Microsoft.Extensions.ObjectPool/2.1.1": {
       "type": "package",
       "serviceable": true,
@@ -1379,26 +1297,12 @@
       "path": "microsoft.net.http.headers/2.1.1",
       "hashPath": "microsoft.net.http.headers.2.1.1.nupkg.sha512"
     },
-    "MySql.Data/8.0.13": {
+    "MySqlConnector/0.44.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mXfjg2pOdzpyd4wkXZPKYcNluzV68ggAO/LPcT7iuzU5kDS7livUDR8IsKkarEhBmRxBy0XmBnUOkEWJvfOW9Q==",
-      "path": "mysql.data/8.0.13",
-      "hashPath": "mysql.data.8.0.13.nupkg.sha512"
-    },
-    "MySql.Data.EntityFrameworkCore/8.0.13": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-sNVNRZOcj2U3zGebejYxrDvYvZVf5F45tmGW3bl5HghoOgL9nwT2t8NRF7WTkaKGXD7QkhUgt3xHyDXr/Xc/6A==",
-      "path": "mysql.data.entityframeworkcore/8.0.13",
-      "hashPath": "mysql.data.entityframeworkcore.8.0.13.nupkg.sha512"
-    },
-    "MySql.Data.EntityFrameworkCore.Design/8.0.13": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-RTsE3p0mKbAeWHc53WVSasdYxkicxdy9En+n8ZbzhJbOZLbmSSwIAkwqcAZvdyiwevlpTkLn8tgkvRWGr4COaQ==",
-      "path": "mysql.data.entityframeworkcore.design/8.0.13",
-      "hashPath": "mysql.data.entityframeworkcore.design.8.0.13.nupkg.sha512"
+      "sha512": "sha512-AdVMqv8KVA878+AF8EkXqjac3ih1tsOzBchYHasoW69vn2Ldez0ucbzB43dmLVkmTa1sQtLtoDbk3n9S34tZyg==",
+      "path": "mysqlconnector/0.44.1",
+      "hashPath": "mysqlconnector.0.44.1.nupkg.sha512"
     },
     "Newtonsoft.Json/12.0.1": {
       "type": "package",
@@ -1406,6 +1310,27 @@
       "sha512": "sha512-jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
       "path": "newtonsoft.json/12.0.1",
       "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
+    },
+    "Pomelo.EntityFrameworkCore.MySql/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LyM3NFH3Tj1ppHZ9QdGoMxA8Ga+kouC7r7QwgPFxWwzsMOsns8Y935u6YQjDBNaPlClTDJSm1V7aOnidxtAMPw==",
+      "path": "pomelo.entityframeworkcore.mysql/2.1.2",
+      "hashPath": "pomelo.entityframeworkcore.mysql.2.1.2.nupkg.sha512"
+    },
+    "Pomelo.EntityFrameworkCore.MySql.Design/1.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Hzq1gPtZ3+1zuNhOAQea8Q7j6iX0FjRwNp5S30+X0jBdATiLEJvlfQi4wuVQDS5Y2ClYICGynNqAJUR3EtgA5g==",
+      "path": "pomelo.entityframeworkcore.mysql.design/1.1.2",
+      "hashPath": "pomelo.entityframeworkcore.mysql.design.1.1.2.nupkg.sha512"
+    },
+    "Pomelo.JsonObject/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sMN9ETMoYfqCegOCVkOkOkfXK3ceH8nWkSeZPgLwfnx6UnqVXTl/ScIZs+x5Q8qgiPmYYCPmtolxNQ0QrcU97g==",
+      "path": "pomelo.jsonobject/2.0.0",
+      "hashPath": "pomelo.jsonobject.2.0.0.nupkg.sha512"
     },
     "Remotion.Linq/2.2.0": {
       "type": "package",
@@ -1442,13 +1367,6 @@
       "path": "system.collections.immutable/1.5.0",
       "hashPath": "system.collections.immutable.1.5.0.nupkg.sha512"
     },
-    "System.Collections.NonGeneric/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
-      "path": "system.collections.nongeneric/4.3.0",
-      "hashPath": "system.collections.nongeneric.4.3.0.nupkg.sha512"
-    },
     "System.ComponentModel/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1469,13 +1387,6 @@
       "sha512": "sha512-j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
       "path": "system.componentmodel.primitives/4.3.0",
       "hashPath": "system.componentmodel.primitives.4.3.0.nupkg.sha512"
-    },
-    "System.Configuration.ConfigurationManager/4.4.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-LoSjM/kLDpyLyoGsmwS5oVMRzHf/0XHkRpr3QZu/HuAv6Sfk919usTMLqD9N9VK3S4Q2+bd3tKJ0ko4MYFfq4Q==",
-      "path": "system.configuration.configurationmanager/4.4.1",
-      "hashPath": "system.configuration.configurationmanager.4.4.1.nupkg.sha512"
     },
     "System.Diagnostics.Debug/4.3.0": {
       "type": "package",
@@ -1637,34 +1548,6 @@
       "sha512": "sha512-guW0uK0fn5fcJJ1tJVXYd7/1h5F+pea1r7FLSOz/f8vPEqbR2ZAknuRDvTQ8PzAilDveOxNjSfr0CHfIQfFk8g==",
       "path": "system.runtime.extensions/4.3.0",
       "hashPath": "system.runtime.extensions.4.3.0.nupkg.sha512"
-    },
-    "System.Security.AccessControl/4.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2NRFPX/V81ucKQmqNgGBZrKGH/5ejsvivSGMRum0SMgPnJxwhuNkzVS1+7gC3R2X0f57CtwrPrXPPSe6nOp82g==",
-      "path": "system.security.accesscontrol/4.4.0",
-      "hashPath": "system.security.accesscontrol.4.4.0.nupkg.sha512"
-    },
-    "System.Security.Cryptography.ProtectedData/4.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-WwEexvBd+17yfY7fcS+fBGl+HADEfCJuKeDJqBT7D6j6vKwYvfLyGuq2y/MmrKORC6mbYwth7kjinO1mPhTL3g==",
-      "path": "system.security.cryptography.protecteddata/4.4.0",
-      "hashPath": "system.security.cryptography.protecteddata.4.4.0.nupkg.sha512"
-    },
-    "System.Security.Permissions/4.4.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-tXBMO8OJEuw9c4KjLj4fwxJusely90azF24Uktz/evgvowAtU963HYl+G93gaRZr6pvYvsSPrjkN4+2pdVUbgw==",
-      "path": "system.security.permissions/4.4.1",
-      "hashPath": "system.security.permissions.4.4.1.nupkg.sha512"
-    },
-    "System.Security.Principal.Windows/4.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pP+AOzt1o3jESOuLmf52YQTF7H3Ng9hTnrOESQiqsnl2IbBh1HInsAMHYtoh75iUYV0OIkHmjvveraYB6zM97w==",
-      "path": "system.security.principal.windows/4.4.0",
-      "hashPath": "system.security.principal.windows.4.4.0.nupkg.sha512"
     },
     "System.Text.Encoding/4.3.0": {
       "type": "package",

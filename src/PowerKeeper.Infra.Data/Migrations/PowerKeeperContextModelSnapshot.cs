@@ -78,6 +78,8 @@ namespace PowerKeeper.Infra.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("sys_office");
+
+                    b.HasAnnotation("MySQL:Charset", "utf8mb4");
                 });
 #pragma warning restore 612, 618
         }

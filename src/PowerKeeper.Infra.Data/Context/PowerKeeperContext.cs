@@ -22,13 +22,14 @@ namespace PowerKeeper.Infra.Data.Context
                 .Build();
 
             //定义要使用的数据库
-            optionsBuilder.UseMySQL(config.GetConnectionString("DefaultConnection"));
+            optionsBuilder.UseMySql(config.GetConnectionString("DefaultConnection"));
             // "server=192.168.0.111;database=PowerKeeper;user=root;password=elisoft@123;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new OfficeMap());
+            
             base.OnModelCreating(modelBuilder);
 
         }

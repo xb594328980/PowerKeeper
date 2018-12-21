@@ -52,7 +52,23 @@ namespace PowerKeeper.Infra.Data.Repository
                 Db.Entry<TEntity>(objList[i]).State = EntityState.Modified;
             DbSet.AttachRange(objList);
         }
-
+        /// <summary>
+        /// 更新单条
+        /// <remarks>create by xingbo 18/12/21</remarks>
+        /// </summary>
+        /// <param name="entity">修改实体</param>
+        /// <param name="fieldNames">更新字段，如为空或null时为更新全部</param>
+        public virtual void Update(TEntity entity, List<string> fieldNames = null)
+        {
+            DbSet.Attach(entity);
+            if (fieldNames != null && fieldNames.Any())
+            {
+                foreach (string fieldName in fieldNames)
+                    Db.Entry(entity).Property(fieldName).IsModified = true;
+            }
+            else
+                Db.Entry<TEntity>(entity).State = EntityState.Modified;
+        }
         public virtual void Remove(Guid id)
         {
             DbSet.Remove(DbSet.Find(id));

@@ -6,3 +6,4 @@ D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Aop\obj\Debug\netcoreapp2.1\Power
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Aop\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Aop.AssemblyInfo.cs
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Aop\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Aop.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Aop\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Aop.pdb
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Aop\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Aop.csprojAssemblyReference.cache

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace PowerKeeper.Application.AutoMapper
+namespace PowerKeeper.Infra.Mapper
 {
     public class AutoMapperConfig
     {

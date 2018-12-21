@@ -5,7 +5,6 @@ D:\OtherWork\PowerKeeper\src\PowerKeeper.UI\bin\Debug\netcoreapp2.1\PowerKeeper.
 D:\OtherWork\PowerKeeper\src\PowerKeeper.UI\bin\Debug\netcoreapp2.1\PowerKeeper.UI.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.UI\bin\Debug\netcoreapp2.1\PowerKeeper.UI.Views.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.UI\bin\Debug\netcoreapp2.1\PowerKeeper.UI.Views.pdb
-D:\OtherWork\PowerKeeper\src\PowerKeeper.UI\obj\Debug\netcoreapp2.1\PowerKeeper.UI.csprojAssemblyReference.cache
 D:\OtherWork\PowerKeeper\src\PowerKeeper.UI\obj\Debug\netcoreapp2.1\PowerKeeper.UI.csproj.CoreCompileInputs.cache
 D:\OtherWork\PowerKeeper\src\PowerKeeper.UI\obj\Debug\netcoreapp2.1\PowerKeeper.UI.RazorAssemblyInfo.cache
 D:\OtherWork\PowerKeeper\src\PowerKeeper.UI\obj\Debug\netcoreapp2.1\PowerKeeper.UI.RazorAssemblyInfo.cs
@@ -30,3 +29,4 @@ D:\OtherWork\PowerKeeper\src\PowerKeeper.UI\obj\Debug\netcoreapp2.1\PowerKeeper.
 D:\OtherWork\PowerKeeper\src\PowerKeeper.UI\obj\Debug\netcoreapp2.1\PowerKeeper.UI.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.UI\obj\Debug\netcoreapp2.1\PowerKeeper.UI.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.UI\obj\Debug\netcoreapp2.1\PowerKeeper.UI.csproj.CopyComplete
+D:\OtherWork\PowerKeeper\src\PowerKeeper.UI\obj\Debug\netcoreapp2.1\PowerKeeper.UI.csprojAssemblyReference.cache

@@ -24,7 +24,6 @@
     <Folder Include="Events\Systemes\" />
     <Folder Include="Validations\Application\" />
     <Folder Include="Validations\Dict\" />
-    <Folder Include="Validations\Office\" />
     <Folder Include="Validations\Resource\" />
     <Folder Include="Validations\Role\" />
     <Folder Include="Validations\Staff\" />

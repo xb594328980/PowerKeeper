@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace PowerKeeper.Domain.Core.Models
@@ -13,6 +14,7 @@ namespace PowerKeeper.Domain.Core.Models
         /// <summary>
         /// 唯一标识
         /// </summary>
+        [Key]
         public Guid Id { get; protected set; }
 
        

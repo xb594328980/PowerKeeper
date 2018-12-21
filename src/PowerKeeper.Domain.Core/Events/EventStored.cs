@@ -8,7 +8,7 @@ namespace PowerKeeper.Domain.Core.Events
     /// 领域事件存储
     /// <remarks>create by xingbo 18/12/17</remarks>
     /// </summary>
-    public class StoredEvent : Event
+    public class EventStore : Event
     {
         /// <summary>
         /// 构造方式实例化
@@ -16,7 +16,7 @@ namespace PowerKeeper.Domain.Core.Events
         /// <param name="theEvent"></param>
         /// <param name="data"></param>
         /// <param name="user"></param>
-        public StoredEvent(Event theEvent, string data, string user)
+        public EventStore(Event theEvent, string data, string user)
         {
             Id = Guid.NewGuid();
             AggregateId = theEvent.AggregateId;
@@ -26,7 +26,7 @@ namespace PowerKeeper.Domain.Core.Events
         }
 
         // 为了EFCore能正确CodeFirst
-        protected StoredEvent() { }
+        protected EventStore() { }
         // 事件存储Id
         public Guid Id { get; private set; }
         // 存储的数据

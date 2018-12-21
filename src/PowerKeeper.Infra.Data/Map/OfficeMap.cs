@@ -16,6 +16,7 @@ namespace PowerKeeper.Infra.Data.Map
         public void Configure(EntityTypeBuilder<Office> builder)
         {
             builder.ToTable("sys_office");
+            builder.HasKey(x => x.Id);
             //实体属性Map
             builder.Property(c => c.Id)
                 .HasColumnType("varchar(64)")
