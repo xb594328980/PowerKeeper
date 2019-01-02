@@ -15,6 +15,7 @@
     <ProjectReference Include="..\PowerKeeper.Infra.Aop\PowerKeeper.Infra.Aop.csproj" />
     <ProjectReference Include="..\PowerKeeper.Infra.Bus\PowerKeeper.Infra.Bus.csproj" />
     <ProjectReference Include="..\PowerKeeper.Infra.Data\PowerKeeper.Infra.Data.csproj" />
+    <ProjectReference Include="..\PowerKeeper.Infra.Identity\PowerKeeper.Infra.Identity.csproj" />
   </ItemGroup>
 
 </Project>

@@ -64,7 +64,7 @@
             构造
             </summary>
             <param name="notifications"></param>
-            <param name="_mediator"></param>
+            <param name="mediator"></param>
             <param name="officeAppService"></param>
         </member>
         <member name="M:PowerKeeper.Api.Controllers.OfficeController.Get">
@@ -84,6 +84,38 @@
             新增单条
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:PowerKeeper.Api.Extensions.MvcOption">
+            <summary>
+            添加自定义路由前缀
+             <remarks>create by xingbo 18/12/24</remarks>
+            </summary>
+        </member>
+        <member name="M:PowerKeeper.Api.Extensions.MvcOption.UseCentralRoutePrefix(Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider)">
+            <summary>
+            添加自定义
+            实现IApplicationModelConvention的RouteConvention
+            <remarks>create by xingbo 18/12/24</remarks>
+            </summary>
+            <param name="opts"></param>
+            <param name="routeAttribute"></param>
+        </member>
+        <member name="T:PowerKeeper.Api.Extensions.RouteConvention">
+            <summary>
+             定义个类RouteConvention，来实现 IApplicationModelConvention 接口
+            </summary>
+        </member>
+        <member name="M:PowerKeeper.Api.Extensions.RouteConvention.#ctor(Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider)">
+            <summary>
+            构造
+            </summary>
+            <param name="routeTemplateProvider"></param>
+        </member>
+        <member name="M:PowerKeeper.Api.Extensions.RouteConvention.Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModel)">
+            <summary>
+            接口的Apply方法
+            </summary>
+            <param name="application"></param>
         </member>
         <member name="T:PowerKeeper.Api.Startup">
             <summary>

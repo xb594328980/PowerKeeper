@@ -96,16 +96,11 @@ namespace PowerKeeper.Infra.Tool.Dependency {
         /// 注册基础设施
         /// </summary>
         private void RegisterInfrastracture() {
-            EnableAop();
-            RegisterFinder();
+
+            RegisterFinder();//注册查找器
         }
 
-        /// <summary>
-        /// 启用Aop
-        /// </summary>
-        private void EnableAop() {
-            _builder.EnableAop( _aopConfigAction );
-        }
+
 
         /// <summary>
         /// 注册类型查找器

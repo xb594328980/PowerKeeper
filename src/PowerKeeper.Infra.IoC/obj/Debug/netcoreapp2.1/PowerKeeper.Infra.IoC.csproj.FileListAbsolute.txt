@@ -22,3 +22,5 @@ D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\obj\Debug\netcoreapp2.1\Power
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.csproj.CopyComplete
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.IoC.pdb
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.dll
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.IoC\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.pdb

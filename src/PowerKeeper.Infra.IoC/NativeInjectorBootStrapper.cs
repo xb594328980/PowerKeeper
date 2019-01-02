@@ -10,6 +10,7 @@ using Christ3D.Infrastruct.Data.Repository;
 using PowerKeeper.Application.Services;
 using PowerKeeper.Application.Interfaces;
 using System.Reflection;
+using Autofac.Core;
 using PowerKeeper.Domain.Core.Bus;
 using PowerKeeper.Infra.Bus;
 using PowerKeeper.Infra.Data.UoW;
@@ -23,6 +24,9 @@ using PowerKeeper.Domain.Notifications;
 using PowerKeeper.Domain.Core.Notifications;
 using PowerKeeper.Domain.Core.Events;
 using PowerKeeper.Application.EventSourcing;
+using PowerKeeper.Infra.Identity;
+using PowerKeeper.Infra.Tool.Dependency;
+using Module = Autofac.Module;
 
 namespace PowerKeeper.Infra.IoC
 {
@@ -30,12 +34,13 @@ namespace PowerKeeper.Infra.IoC
     /// 依赖关系绑定
     /// <remarks>create by xingbo 18/12/17</remarks>
     /// </summary>
-    public class NativeInjectorBootStrapper : Autofac.Module
+    public class NativeInjectorBootStrapper : Module, IConfig
     {
         protected override void Load(ContainerBuilder builder)
         {
-
-
+            builder.RegisterType<IdentityManager>().InstancePerLifetimeScope();
+            // mediator 
+            builder.RegisterType<Mediator>().As<IMediator>().InstancePerLifetimeScope();
 
             // 注入 Application 应用层
             builder.RegisterAssemblyTypes(typeof(OfficeAppService).GetTypeInfo().Assembly).AsImplementedInterfaces().AsSelf().PropertiesAutowired();
@@ -70,8 +75,6 @@ namespace PowerKeeper.Infra.IoC
             builder.RegisterType<SqlEventStoreService>().As<IEventStoreService>();
             builder.RegisterType<EventStoreRepository>().As<IEventStoreRepository>();
             builder.RegisterType<SQLEventStoreContext>().InstancePerLifetimeScope();
-
-
         }
 
         public static void RegisterServices(IServiceCollection services)

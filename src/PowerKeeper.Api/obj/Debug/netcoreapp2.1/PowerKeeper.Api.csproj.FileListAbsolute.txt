@@ -32,3 +32,5 @@ D:\OtherWork\PowerKeeper\src\PowerKeeper.Api\bin\Debug\netcoreapp2.1\PowerKeeper
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Api\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Aop.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Api\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Api\bin\Debug\netcoreapp2.1\PowerKeeper.Api.xml
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Api\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.dll
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Api\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.pdb

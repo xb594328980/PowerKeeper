@@ -8,6 +8,8 @@ using PowerKeeper.Application.Interfaces;
 using PowerKeeper.Application.ViewModels;
 using PowerKeeper.Domain.Core.Bus;
 using PowerKeeper.Domain.Core.Notifications;
+using PowerKeeper.Infra.Identity;
+using PowerKeeper.Infra.Tool.Helpers;
 
 namespace PowerKeeper.Api.Controllers
 {
@@ -22,9 +24,9 @@ namespace PowerKeeper.Api.Controllers
         /// 构造
         /// </summary>
         /// <param name="notifications"></param>
-        /// <param name="_mediator"></param>
+        /// <param name="mediator"></param>
         /// <param name="officeAppService"></param>
-        public OfficeController(INotificationHandler<DomainNotification> notifications, IMediatorHandler _mediator, IOfficeAppService officeAppService) : base(notifications, _mediator)
+        public OfficeController(INotificationHandler<DomainNotification> notifications, IMediatorHandler mediator, IOfficeAppService officeAppService) : base(notifications, mediator)
         {
             _officeAppService = officeAppService;
         }
@@ -34,10 +36,23 @@ namespace PowerKeeper.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("api/office")]
+        [Route("office")]
         public IActionResult Get()
         {
-            var list = _officeAppService.GetAll();
+            IdentityManager identityManager = Ioc.Create<IdentityManager>();// new Identi
+
+            var token = identityManager.GenerateToken(new UserInfoPrincipal()
+            {
+                StaffId = Guid.NewGuid(),
+                Name = "Name",
+                Account = "Account",
+                OfficeName = "OfficeName",
+                OfficeId = Guid.NewGuid(),
+                Roles = new Guid[] { Guid.NewGuid() },
+                StaffType = 0
+            });
+            var list = Ioc.Create<IOfficeAppService>().GetAll();
+            // var list = _officeAppService.GetAll();
             return Response(list);
         }
 
@@ -46,9 +61,10 @@ namespace PowerKeeper.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("api/office/{id:guid}")]
+        [Route("office/{id:guid}")]
         public IActionResult Get(Guid id)
         {
+
             var list = _officeAppService.GetById(id);
             return Response(list);
         }
@@ -58,7 +74,7 @@ namespace PowerKeeper.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpPost]
-        [Route("api/office")]
+        [Route("office")]
         public IActionResult Create([FromBody]OfficeViewModel model)
         {
             model = new OfficeViewModel()

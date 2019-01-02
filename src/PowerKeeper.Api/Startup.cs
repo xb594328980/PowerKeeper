@@ -2,19 +2,27 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Principal;
+using System.Text;
 using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using PowerKeeper.Api.Extensions;
+using PowerKeeper.Infra.Identity;
 using PowerKeeper.Infra.IoC;
 using PowerKeeper.Infra.Mapper;
+using PowerKeeper.Infra.Tool;
+using PowerKeeper.Infra.Tool.Dependency;
+using PowerKeeper.Infra.Tool.Helpers;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace PowerKeeper.Api
@@ -41,8 +49,6 @@ namespace PowerKeeper.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            services.AddIocSetup();
-            services.AddAutoMapperSetup();
             #region Swagger
             //添加Swagger
             services.AddSwaggerGen(options =>
@@ -51,21 +57,29 @@ namespace PowerKeeper.Api
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "PowerKeeper.Api.xml"));
             });
             #endregion
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //AutoMapper
+            services.AddAutoMapperSetup();
+            services.AddMvc(opt =>
+            {
+                opt.UseCentralRoutePrefix(new RouteAttribute("api") { });
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //MediatR
             services.AddMediatR(typeof(Startup));
-            #region autofac
 
-            var containerBuilder = new ContainerBuilder();
-            containerBuilder.RegisterModule<NativeInjectorBootStrapper>();
-            containerBuilder.Populate(services);
-            var container = containerBuilder.Build();
-            // mediator itself
-            containerBuilder
-                .RegisterType<Mediator>()
-                .As<IMediator>()
-                .InstancePerLifetimeScope();
-            return container.Resolve<IServiceProvider>();
-            #endregion autofac
+            IServiceProvider serviceProvider = services.AddInfrastructure(new NativeInjectorBootStrapper(), new Jwt_Identity());
+
+            IdentityManager identityManager = Ioc.Create<IdentityManager>();// new IdentityManager();
+            var tokenValidationParameters = identityManager.GetTokenValidationParameters();
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = "Jwt";
+                options.DefaultChallengeScheme = "Jwt";
+            }).AddJwtBearer("Jwt", options =>
+            {
+                options.TokenValidationParameters = tokenValidationParameters;
+            });
+
+            return serviceProvider;
         }
         /// <summary>
         /// 配置
@@ -80,6 +94,7 @@ namespace PowerKeeper.Api
                 app.UseDeveloperExceptionPage();
             }
             app.UseMvc();
+            app.UseAuthentication();//启用授权
             #region Swagger
 
             // Enable middleware to serve generated Swagger as a JSON endpoint
@@ -101,7 +116,6 @@ namespace PowerKeeper.Api
             });
 
             #endregion Swagger
-
         }
     }
 }

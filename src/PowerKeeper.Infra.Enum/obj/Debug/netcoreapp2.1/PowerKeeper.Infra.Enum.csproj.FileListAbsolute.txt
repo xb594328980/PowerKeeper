@@ -6,3 +6,4 @@ D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Enum\obj\Debug\netcoreapp2.1\Powe
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Enum\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.AssemblyInfo.cs
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Enum\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Enum\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.pdb
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Enum\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.csprojAssemblyReference.cache
