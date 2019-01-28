@@ -8,10 +8,13 @@ using System.Threading.Tasks;
 
 namespace PowerKeeper.Domain.EventHandlers
 {
+    /// <summary>
+    /// 组织机构事件处理
+    /// </summary>
     public class OfficeEventHandler :
         INotificationHandler<OfficeCreatedEvent>,
         INotificationHandler<OfficeUpdatedEvent>,
-        INotificationHandler<OfficeRemovedEvent>
+        INotificationHandler<OfficeDeletedEvent>
     {
         public Task Handle(OfficeCreatedEvent notification, CancellationToken cancellationToken)
         {
@@ -24,7 +27,7 @@ namespace PowerKeeper.Domain.EventHandlers
             return Task.CompletedTask;
         }
 
-        public Task Handle(OfficeRemovedEvent notification, CancellationToken cancellationToken)
+        public Task Handle(OfficeDeletedEvent notification, CancellationToken cancellationToken)
         {
             return Task.CompletedTask;
         }

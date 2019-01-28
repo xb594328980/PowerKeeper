@@ -11,5 +11,6 @@ namespace PowerKeeper.Domain.Interfaces
     /// </summary>
     public interface IStaffRepository : IRepository<Staff>
     {
+
     }
 }

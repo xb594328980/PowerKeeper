@@ -24,6 +24,8 @@ using PowerKeeper.Domain.Notifications;
 using PowerKeeper.Domain.Core.Notifications;
 using PowerKeeper.Domain.Core.Events;
 using PowerKeeper.Application.EventSourcing;
+using PowerKeeper.Domain.Commands.Staff;
+using PowerKeeper.Domain.Events.Staff;
 using PowerKeeper.Infra.Identity;
 using PowerKeeper.Infra.Tool.Dependency;
 using Module = Autofac.Module;
@@ -60,13 +62,21 @@ namespace PowerKeeper.Infra.IoC
             //将命令模型和命令处理程序匹配注入
             builder.RegisterType<OfficeCommandHandler>().As<IRequestHandler<CreateOfficeCommand, Unit>>();
             builder.RegisterType<OfficeCommandHandler>().As<IRequestHandler<UpdateOfficeCommand, Unit>>();
-            builder.RegisterType<OfficeCommandHandler>().As<IRequestHandler<RemoveOfficeCommand, Unit>>();
+            builder.RegisterType<OfficeCommandHandler>().As<IRequestHandler<DeleteOfficeCommand, Unit>>();
+
+            builder.RegisterType<StaffCommandHandler>().As<IRequestHandler<CreateStaffCommand, Unit>>();
+            builder.RegisterType<StaffCommandHandler>().As<IRequestHandler<UpdateStaffCommand, Unit>>();
+            builder.RegisterType<StaffCommandHandler>().As<IRequestHandler<DeleteStaffCommand, Unit>>();
 
             // Domain - Events
             // 将事件模型和事件处理程序匹配注入
             builder.RegisterType<OfficeEventHandler>().As<INotificationHandler<OfficeCreatedEvent>>();
             builder.RegisterType<OfficeEventHandler>().As<INotificationHandler<OfficeUpdatedEvent>>();
-            builder.RegisterType<OfficeEventHandler>().As<INotificationHandler<OfficeRemovedEvent>>();
+            builder.RegisterType<OfficeEventHandler>().As<INotificationHandler<OfficeDeletedEvent>>();
+
+            builder.RegisterType<StaffEventHandler>().As<INotificationHandler<StaffCreatedEvent>>();
+            builder.RegisterType<StaffEventHandler>().As<INotificationHandler<StaffUpdatedEvent>>();
+            builder.RegisterType<StaffEventHandler>().As<INotificationHandler<StaffDeletedEvent>>();
 
             // 将事件模型和事件处理程序匹配注入
             builder.RegisterType<DomainNotificationHandler>().As<INotificationHandler<DomainNotification>>().InstancePerLifetimeScope();

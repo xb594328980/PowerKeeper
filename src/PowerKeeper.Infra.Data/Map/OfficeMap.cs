@@ -15,6 +15,7 @@ namespace PowerKeeper.Infra.Data.Map
     {
         public void Configure(EntityTypeBuilder<Office> builder)
         {
+            builder.HasQueryFilter(post => EF.Property<int>(post, "DelFlag") == 0);//设置查询自动添加DelFlag为0的条件
             builder.ToTable("sys_office");
             builder.HasKey(x => x.Id);
             //实体属性Map

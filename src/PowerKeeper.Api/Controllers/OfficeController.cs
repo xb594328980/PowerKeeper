@@ -17,6 +17,7 @@ namespace PowerKeeper.Api.Controllers
     /// 组织机构控制器
     /// <remarks>Create by xingbo 18/12/20</remarks>
     /// </summary>
+    [Route("[controller]")]
     public class OfficeController : ApiController
     {
         private readonly IOfficeAppService _officeAppService;
@@ -36,7 +37,6 @@ namespace PowerKeeper.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("office")]
         public IActionResult Get()
         {
             IdentityManager identityManager = Ioc.Create<IdentityManager>();// new Identi
@@ -61,7 +61,7 @@ namespace PowerKeeper.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("office/{id:guid}")]
+        [Route("{id:guid}")]
         public IActionResult Get(Guid id)
         {
 
@@ -74,7 +74,6 @@ namespace PowerKeeper.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpPost]
-        [Route("office")]
         public IActionResult Create([FromBody]OfficeViewModel model)
         {
             model = new OfficeViewModel()

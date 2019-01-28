@@ -9,10 +9,14 @@ using System.IO;
 
 namespace PowerKeeper.Infra.Data.Context
 {
+    /// <summary>
+    /// 权限数据库上下文
+    ///  context.Office.IgnoreQueryFilters().Where();//临时禁用查询过滤器
+    /// </summary>
     public class PowerKeeperContext : DbContext
     {
         public DbSet<Office> Office { get; set; }
-
+        public DbSet<Staff> Staff { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // 从 appsetting.json 中获取配置信息
@@ -29,9 +33,10 @@ namespace PowerKeeper.Infra.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new OfficeMap());
-            
+            modelBuilder.ApplyConfiguration(new StaffMap());
             base.OnModelCreating(modelBuilder);
 
         }
+
     }
 }
