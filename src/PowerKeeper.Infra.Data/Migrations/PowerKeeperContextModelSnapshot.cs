@@ -14,7 +14,8 @@ namespace PowerKeeper.Infra.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.4-rtm-31024");
+                .HasAnnotation("ProductVersion", "2.1.4-rtm-31024")
+                .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("PowerKeeper.Domain.Models.Office", b =>
                 {
@@ -78,8 +79,74 @@ namespace PowerKeeper.Infra.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("sys_office");
+                });
 
-                    b.HasAnnotation("MySQL:Charset", "utf8mb4");
+            modelBuilder.Entity("PowerKeeper.Domain.Models.Staff", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasConversion(new ValueConverter<string, string>(v => default(string), v => default(string), new ConverterMappingHints(size: 36)))
+                        .HasColumnName("id")
+                        .HasColumnType("varchar(64)");
+
+                    b.Property<string>("Account");
+
+                    b.Property<string>("CreateBy")
+                        .IsRequired()
+                        .HasConversion(new ValueConverter<string, string>(v => default(string), v => default(string), new ConverterMappingHints(size: 36)))
+                        .HasColumnName("create_by")
+                        .HasColumnType("varchar(64)");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnName("create_date");
+
+                    b.Property<int>("DelFlag")
+                        .HasColumnName("del_flag");
+
+                    b.Property<string>("Email")
+                        .HasColumnName("email")
+                        .HasColumnType("varchar(64)");
+
+                    b.Property<int>("EnabledFlag")
+                        .HasColumnName("enabled_flag");
+
+                    b.Property<int>("LoginFlag")
+                        .HasColumnName("login_flag");
+
+                    b.Property<string>("Mobile")
+                        .IsRequired()
+                        .HasColumnName("mobile")
+                        .HasColumnType("varchar(64)");
+
+                    b.Property<string>("OfficeId")
+                        .IsRequired()
+                        .HasConversion(new ValueConverter<string, string>(v => default(string), v => default(string), new ConverterMappingHints(size: 36)))
+                        .HasColumnName("office_id")
+                        .HasColumnType("varchar(64)");
+
+                    b.Property<string>("Remark")
+                        .HasColumnName("remark")
+                        .HasColumnType("varchar(512)");
+
+                    b.Property<string>("StaffName")
+                        .IsRequired()
+                        .HasColumnName("staff_name")
+                        .HasColumnType("varchar(64)");
+
+                    b.Property<int>("StaffType")
+                        .HasColumnName("staff_type");
+
+                    b.Property<string>("UpdateBy")
+                        .HasConversion(new ValueConverter<string, string>(v => default(string), v => default(string), new ConverterMappingHints(size: 36)))
+                        .HasColumnName("update_by")
+                        .HasColumnType("varchar(64)");
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasColumnName("update_date");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("sys_staff");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,0 +1,9 @@
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Log\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.deps.json
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Log\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.dll
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Log\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.pdb
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Log\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.csproj.CoreCompileInputs.cache
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Log\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.AssemblyInfoInputs.cache
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Log\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.AssemblyInfo.cs
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Log\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.dll
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Log\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.pdb
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Log\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.csprojAssemblyReference.cache

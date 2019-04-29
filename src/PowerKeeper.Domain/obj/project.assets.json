@@ -1086,6 +1086,16 @@
           "bin/placeholder/PowerKeeper.Domain.Core.dll": {}
         }
       },
+      "PowerKeeper.Infra.Enum/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/PowerKeeper.Infra.Enum.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PowerKeeper.Infra.Enum.dll": {}
+        }
+      },
       "PowerKeeper.Infra.Tool/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -3777,6 +3787,11 @@
       "path": "../PowerKeeper.Domain.Core/PowerKeeper.Domain.Core.csproj",
       "msbuildProject": "../PowerKeeper.Domain.Core/PowerKeeper.Domain.Core.csproj"
     },
+    "PowerKeeper.Infra.Enum/1.0.0": {
+      "type": "project",
+      "path": "../PowerKeeper.Infra.Enum/PowerKeeper.Infra.Enum.csproj",
+      "msbuildProject": "../PowerKeeper.Infra.Enum/PowerKeeper.Infra.Enum.csproj"
+    },
     "PowerKeeper.Infra.Tool/1.0.0": {
       "type": "project",
       "path": "../PowerKeeper.Infra.Tool/PowerKeeper.Infra.Tool.csproj",
@@ -3787,6 +3802,7 @@
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
       "PowerKeeper.Domain.Core >= 1.0.0",
+      "PowerKeeper.Infra.Enum >= 1.0.0",
       "PowerKeeper.Infra.Tool >= 1.0.0"
     ]
   },
@@ -3822,6 +3838,9 @@
           "projectReferences": {
             "D:\\OtherWork\\PowerKeeper\\src\\PowerKeeper.Domain.Core\\PowerKeeper.Domain.Core.csproj": {
               "projectPath": "D:\\OtherWork\\PowerKeeper\\src\\PowerKeeper.Domain.Core\\PowerKeeper.Domain.Core.csproj"
+            },
+            "D:\\OtherWork\\PowerKeeper\\src\\PowerKeeper.Infra.Enum\\PowerKeeper.Infra.Enum.csproj": {
+              "projectPath": "D:\\OtherWork\\PowerKeeper\\src\\PowerKeeper.Infra.Enum\\PowerKeeper.Infra.Enum.csproj"
             },
             "D:\\OtherWork\\PowerKeeper\\src\\PowerKeeper.Infra.Tool\\PowerKeeper.Infra.Tool.csproj": {
               "projectPath": "D:\\OtherWork\\PowerKeeper\\src\\PowerKeeper.Infra.Tool\\PowerKeeper.Infra.Tool.csproj"

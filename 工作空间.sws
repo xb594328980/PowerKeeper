@@ -4,7 +4,8 @@
 
 <Workspace>
 	<Local Expanded="Yes">
-		<Model Expanded="Yes" ID="{4AE2FE40-556D-491A-8D91-374AA0265E89}" Name="PowerKeeper" Selected="Yes" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="PowerKeeper.pdm"/>
+		<Model Expanded="Yes" ID="{4AE2FE40-556D-491A-8D91-374AA0265E89}" Loaded="No" Name="PowerKeeper" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="PowerKeeper.pdm"/>
+		<Model Expanded="Yes" ID="{6CE992B8-BAA5-4B70-9912-F421A6D71818}" Name="elisoft.esms.node.biz" Selected="Yes" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="/Works/sms.xiaoduobao_v2.0/elisoft.esms.node.biz.pdm"/>
 	</Local>
 	<BrowserModule Name="仓库(&amp;R)"/>
 </Workspace>

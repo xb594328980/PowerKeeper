@@ -52,5 +52,15 @@ namespace PowerKeeper.Domain.CommandHandlers
             foreach (var error in message.ValidationResult.Errors)
                 _bus.RaiseEvent(new DomainNotification("", error.ErrorMessage));
         }
+
+        /// <summary>
+        ///收集错误信息
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        protected void NotifyValidationError(string value, string key = "")
+        {
+            _bus.RaiseEvent(new DomainNotification(key, value));
+        }
     }
 }

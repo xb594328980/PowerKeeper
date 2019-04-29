@@ -54,7 +54,7 @@ namespace PowerKeeper.Application.Services
             throw new NotImplementedException();
         }
 
-        public void Remove(OfficeViewModel officeViewModel)
+        public void Delete(OfficeViewModel officeViewModel)
         {
             throw new NotImplementedException();
         }

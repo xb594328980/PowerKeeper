@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using PowerKeeper.Infra.Tool.Helpers;
+using Enum = System.Enum;
 
 namespace PowerKeeper.Domain.Validations
 {
@@ -12,8 +13,18 @@ namespace PowerKeeper.Domain.Validations
     /// <remarks>create by xingbo 18/12/20</remarks>
     /// </summary>
     /// <typeparam name="T">命令模型</typeparam>
-    public abstract  class BaseValidation<T> : AbstractValidator<T> where T : Command
+    public abstract class BaseValidation<T> : AbstractValidator<T> where T : Command
     {
+        /// <summary>
+        /// 验证枚举
+        /// </summary>
+        /// <typeparam name="TEnumType"></typeparam>
+        /// <returns></returns>
+        protected bool IsEnumType<TEnumType>(object val) where TEnumType : struct
+        {
+            TEnumType result;
+            return Enum.TryParse(val.ToString(), true, out result);
+        }
         /// <summary>
         /// 验证电话
         /// <remarks>create by xingbo 18/12/20</remarks>

@@ -25,7 +25,7 @@ namespace PowerKeeper.Domain.CommandHandlers
     public class OfficeCommandHandler : CommandHandler,
          IRequestHandler<CreateOfficeCommand, Unit>,
          IRequestHandler<UpdateOfficeCommand, Unit>,
-         IRequestHandler<RemoveOfficeCommand, Unit>
+         IRequestHandler<DeleteOfficeCommand, Unit>
     {
         // 注入仓储接口
         private readonly IOfficeRepository _officeRepository;
@@ -141,7 +141,7 @@ namespace PowerKeeper.Domain.CommandHandlers
 
         }
 
-        public Task<Unit> Handle(RemoveOfficeCommand request, CancellationToken cancellationToken)
+        public Task<Unit> Handle(DeleteOfficeCommand request, CancellationToken cancellationToken)
         {
             // 命令验证
             if (!request.IsValid())
@@ -152,19 +152,21 @@ namespace PowerKeeper.Domain.CommandHandlers
             }
             // 实例化领域模型，这里才真正的用到了领域模型
             // 注意这里是通过构造函数方法实现
-
+            List<string> fieldNames = new List<string>() { "DelFlag", "UpdateDate", "UpdateBy" };
             Office office = request.MapTo<Office>();
+            if (!string.IsNullOrWhiteSpace(office.Remark))
+                fieldNames.Add("Remark");
             // 判断组织机构编码或名称是否存在
             if (_officeRepository.GetAll(x => x.ParentId == request.Id).Any())
             {
                 _bus.RaiseEvent(new DomainNotification("", "组织机构存在子级，不允许删除！"));
                 return Task.FromResult(new Unit());
             }
-            _officeRepository.Update(office);
+            _officeRepository.Update(office, fieldNames);
             // 统一提交
             if (Commit())
             {
-                OfficeRemovedEvent officeCreatedEvent = new OfficeRemovedEvent(request.Id,
+                OfficeDeletedEvent officeCreatedEvent = new OfficeDeletedEvent(request.Id,
                     request.DelFlag,
                     request.Remark?.Trim(),
                     request.UpdateDate.Value,

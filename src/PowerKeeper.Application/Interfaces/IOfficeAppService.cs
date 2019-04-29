@@ -41,6 +41,6 @@ namespace PowerKeeper.Application.Interfaces
         /// <remarks>create by xingbo 18/12/19</remarks>
         /// </summary>
         /// <param name="officeViewModel"></param>
-        void Remove(OfficeViewModel officeViewModel);
+        void Delete(OfficeViewModel officeViewModel);
     }
 }
