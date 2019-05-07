@@ -85,6 +85,8 @@ namespace PowerKeeper.Infra.IoC
             builder.RegisterType<SqlEventStoreService>().As<IEventStoreService>();
             builder.RegisterType<EventStoreRepository>().As<IEventStoreRepository>();
             builder.RegisterType<SQLEventStoreContext>().InstancePerLifetimeScope();
+
+            
         }
 
         public static void RegisterServices(IServiceCollection services)

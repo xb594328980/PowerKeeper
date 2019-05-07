@@ -9,4 +9,3 @@ D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Tool\obj\Debug\netcoreapp2.1\Powe
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Tool\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.AssemblyInfo.cs
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Tool\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Tool\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.pdb
-D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Tool\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.csprojAssemblyReference.cache

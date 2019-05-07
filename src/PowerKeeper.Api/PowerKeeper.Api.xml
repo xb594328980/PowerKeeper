@@ -81,8 +81,9 @@
         </member>
         <member name="M:PowerKeeper.Api.Controllers.OfficeController.Create(PowerKeeper.Application.ViewModels.OfficeViewModel)">
             <summary>
-            新增单条
+             新增单条
             </summary>
+            <param name="model"></param>
             <returns></returns>
         </member>
         <member name="T:PowerKeeper.Api.Controllers.StaffController">

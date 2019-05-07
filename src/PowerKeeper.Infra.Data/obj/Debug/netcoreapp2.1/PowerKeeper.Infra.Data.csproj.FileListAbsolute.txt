@@ -5,9 +5,11 @@ D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\bin\Debug\netcoreapp2.1\Powe
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Data.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.dll
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.pdb
+D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.pdb
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Data.csprojAssemblyReference.cache
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Data.csproj.CoreCompileInputs.cache
@@ -16,5 +18,3 @@ D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\obj\Debug\netcoreapp2.1\Powe
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Data.csproj.CopyComplete
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Data.dll
 D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Data.pdb
-D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.dll
-D:\OtherWork\PowerKeeper\src\PowerKeeper.Infra.Data\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.pdb

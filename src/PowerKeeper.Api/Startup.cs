@@ -17,6 +17,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using PowerKeeper.Api.Extensions;
+using PowerKeeper.Infra.Data.Context;
 using PowerKeeper.Infra.Identity;
 using PowerKeeper.Infra.IoC;
 using PowerKeeper.Infra.Mapper;
@@ -62,13 +63,24 @@ namespace PowerKeeper.Api
             services.AddMvc(opt =>
             {
                 opt.UseCentralRoutePrefix(new RouteAttribute("api") { });
-            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             //MediatR
             services.AddMediatR(typeof(Startup));
-
+            services.AddCap(x =>
+            {
+                x.UseEntityFramework<PowerKeeperContext>();
+                x.UseRabbitMQ(y =>
+                {
+                    y.HostName = "192.168.0.111";
+                    y.Port = 5672;
+                    y.Password = "123";
+                    y.UserName = "admin";
+                });
+            });
             IServiceProvider serviceProvider = services.AddInfrastructure(new NativeInjectorBootStrapper(), new Jwt_Identity());
-
             IdentityManager identityManager = Ioc.Create<IdentityManager>();// new IdentityManager();
+                                                                            //cap配置
+
             var tokenValidationParameters = identityManager.GetTokenValidationParameters();
             services.AddAuthentication(options =>
             {

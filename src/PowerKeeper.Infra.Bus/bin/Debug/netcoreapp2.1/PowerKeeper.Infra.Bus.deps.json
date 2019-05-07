@@ -152,14 +152,14 @@
     "FluentValidation/8.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3k+OrhhDP9EoKg9GqlvQ9SY/gjpMPLL9vCwMH58wOs0PIPTSB1vFZ2pDkXnshaMCgq28qjYxpkecapRuLXqHyg==",
+      "sha512": "sha512-yvSlYDthCeMFbFut/OCVCGXAB8SUb0c7Dv4hWcbJNNOugq+4rqsD7piGQYF9MxmJSMYDagbq6OJHOajKg159yg==",
       "path": "fluentvalidation/8.1.1",
       "hashPath": "fluentvalidation.8.1.1.nupkg.sha512"
     },
     "MediatR/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nQrQ4Ngy5eyS6Oi53e9oreZ8hl6RJOv8ohNExA/QZdnshLySsVUEAAqTDIEOobjPzwQ2itTB5fukdfRV4eGbQQ==",
+      "sha512": "sha512-R01T5Af1kSH9lBvlxdTeJOr+ugPwfy0FsFq15XsNAIA8GSUYwHW7lfvYGwhBynwJVXWxRwieqxOxCFEV9GO+SQ==",
       "path": "mediatr/6.0.0",
       "hashPath": "mediatr.6.0.0.nupkg.sha512"
     },
@@ -187,14 +187,14 @@
     "System.ComponentModel.Annotations/4.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9u9RA7adeZVCX5Jd0iJHNcZThjCdv7YbyC3ouznQQLCIjOFLSFkZZdGPGH1pUmyGLwrcBYnigT76JZu2blzQAA==",
+      "sha512": "sha512-ToiYqSCioqhtspq2O/jYKtyTC/T0uwWHBTYlzCi6PRbSSHArN1IaRWeHffDamvms5sye5FDUWCfNZgubQpNRsA==",
       "path": "system.componentmodel.annotations/4.4.1",
       "hashPath": "system.componentmodel.annotations.4.4.1.nupkg.sha512"
     },
     "System.ComponentModel.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
+      "sha512": "sha512-KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
       "path": "system.componentmodel.primitives/4.3.0",
       "hashPath": "system.componentmodel.primitives.4.3.0.nupkg.sha512"
     },
@@ -285,7 +285,7 @@
     "System.ValueTuple/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xZtSZNEHGa+tGsKuP4sh257vxJ/yemShz4EusmomkynMzuEDDjVaErBNewpzEF6swUgbcrSQAX3ELsEp1zCOwA==",
+      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
       "path": "system.valuetuple/4.5.0",
       "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
     },

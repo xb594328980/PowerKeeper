@@ -70,8 +70,9 @@ namespace PowerKeeper.Api.Controllers
         }
 
         /// <summary>
-        /// 新增单条
+        ///  新增单条
         /// </summary>
+        /// <param name="model"></param>
         /// <returns></returns>
         [HttpPost]
         public IActionResult Create([FromBody]OfficeViewModel model)
@@ -89,7 +90,6 @@ namespace PowerKeeper.Api.Controllers
                 OfficeType = 0,
                 OfficePhone = null,
                 Remark = null
-
             };
             _officeAppService.Add(model);
             return Response(model.Id);

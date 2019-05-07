@@ -29,6 +29,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="DotNetCore.CAP" Version="2.5.0" />
+    <PackageReference Include="DotNetCore.CAP.MySql" Version="2.5.0" />
+    <PackageReference Include="DotNetCore.CAP.RabbitMQ" Version="2.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Microsoft.Extensions.Caching.Abstractions">
       <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.caching.abstractions\2.1.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
     </Reference>
