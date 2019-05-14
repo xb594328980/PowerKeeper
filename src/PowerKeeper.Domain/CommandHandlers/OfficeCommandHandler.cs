@@ -7,7 +7,6 @@ using System.Text;
 using PowerKeeper.Domain.Commands.Office;
 using System.Threading;
 using System.Threading.Tasks;
-using Christ3D.Domain.Interfaces;
 using PowerKeeper.Domain.Core.Bus;
 using PowerKeeper.Domain.Interfaces;
 using PowerKeeper.Domain.Models;

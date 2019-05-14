@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Christ3D.Domain.Interfaces;
 using MediatR;
 using PowerKeeper.Domain.Commands.Office;
 using PowerKeeper.Domain.Commands.Staff;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Christ3D.Domain.Interfaces
+namespace PowerKeeper.Domain.Interfaces
 {
     /// <summary>
     /// 工作单元接口
