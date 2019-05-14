@@ -14,7 +14,6 @@ using Autofac.Core;
 using PowerKeeper.Domain.Core.Bus;
 using PowerKeeper.Infra.Bus;
 using PowerKeeper.Infra.Data.UoW;
-using Christ3D.Domain.Interfaces;
 using MediatR;
 using PowerKeeper.Domain.CommandHandlers;
 using PowerKeeper.Domain.Commands.Office;
