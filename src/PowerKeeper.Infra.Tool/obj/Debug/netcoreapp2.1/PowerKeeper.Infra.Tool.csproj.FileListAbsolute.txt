@@ -1,0 +1,12 @@
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Tool\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.deps.json
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Tool\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.dll
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Tool\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.pdb
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Tool\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.csprojAssemblyReference.cache
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Tool\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.Properties.LibraryResource.resources
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Tool\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.Properties.R.resources
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Tool\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.csproj.GenerateResource.cache
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Tool\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.csproj.CoreCompileInputs.cache
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Tool\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.AssemblyInfoInputs.cache
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Tool\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.AssemblyInfo.cs
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Tool\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.dll
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Tool\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.pdb

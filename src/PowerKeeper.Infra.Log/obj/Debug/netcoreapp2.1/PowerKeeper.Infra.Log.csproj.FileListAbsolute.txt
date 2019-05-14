@@ -1,0 +1,8 @@
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Log\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.deps.json
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Log\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.dll
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Log\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.pdb
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Log\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.csproj.CoreCompileInputs.cache
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Log\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.AssemblyInfoInputs.cache
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Log\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.AssemblyInfo.cs
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Log\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.dll
+E:\PowerKeeper-master\src\PowerKeeper.Infra.Log\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Log.pdb

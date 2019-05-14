@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Christ3D.Infrastruct.Data.Repository
+namespace PowerKeeper.Infra.Data.Repository
 {
     /// <summary>
     /// 事件仓储数据库仓储实现类

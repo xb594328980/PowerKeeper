@@ -6,7 +6,6 @@ using System.Text;
 using PowerKeeper.Infra.Data.Repository;
 using PowerKeeper.Domain.Interfaces;
 using PowerKeeper.Infra.Data.Context;
-using Christ3D.Infrastruct.Data.Repository;
 using PowerKeeper.Application.Services;
 using PowerKeeper.Application.Interfaces;
 using System.Reflection;
