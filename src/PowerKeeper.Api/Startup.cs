@@ -23,6 +23,7 @@ using PowerKeeper.Infra.Mapper;
 using PowerKeeper.Infra.Tool;
 using PowerKeeper.Infra.Tool.Dependency;
 using PowerKeeper.Infra.Tool.Helpers;
+using Sansunt.HiCard.Infra.IoC;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace PowerKeeper.Api
@@ -62,11 +63,13 @@ namespace PowerKeeper.Api
             services.AddMvc(opt =>
             {
                 opt.UseCentralRoutePrefix(new RouteAttribute("api") { });
-            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             //MediatR
             services.AddMediatR(typeof(Startup));
 
-            IServiceProvider serviceProvider = services.AddInfrastructure(new NativeInjectorBootStrapper(), new Jwt_Identity());
+            IServiceProvider serviceProvider = services.AddInfrastructure(new NativeInjectorBootStrapper(),
+                new CommandHandlerBootStrapper(),
+                new EventBootStrapper());
 
             IdentityManager identityManager = Ioc.Create<IdentityManager>();// new IdentityManager();
             var tokenValidationParameters = identityManager.GetTokenValidationParameters();
