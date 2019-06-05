@@ -10,3 +10,15 @@ E:\PowerKeeper-master\src\PowerKeeper.Infra.Bus\obj\Debug\netcoreapp2.1\PowerKee
 E:\PowerKeeper-master\src\PowerKeeper.Infra.Bus\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.csproj.CopyComplete
 E:\PowerKeeper-master\src\PowerKeeper.Infra.Bus\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.dll
 E:\PowerKeeper-master\src\PowerKeeper.Infra.Bus\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.pdb
+D:\PowerKeeper\src\PowerKeeper.Infra.Bus\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.deps.json
+D:\PowerKeeper\src\PowerKeeper.Infra.Bus\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.dll
+D:\PowerKeeper\src\PowerKeeper.Infra.Bus\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.pdb
+D:\PowerKeeper\src\PowerKeeper.Infra.Bus\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.dll
+D:\PowerKeeper\src\PowerKeeper.Infra.Bus\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.pdb
+D:\PowerKeeper\src\PowerKeeper.Infra.Bus\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.csprojAssemblyReference.cache
+D:\PowerKeeper\src\PowerKeeper.Infra.Bus\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.csproj.CoreCompileInputs.cache
+D:\PowerKeeper\src\PowerKeeper.Infra.Bus\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.AssemblyInfoInputs.cache
+D:\PowerKeeper\src\PowerKeeper.Infra.Bus\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.AssemblyInfo.cs
+D:\PowerKeeper\src\PowerKeeper.Infra.Bus\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.csproj.CopyComplete
+D:\PowerKeeper\src\PowerKeeper.Infra.Bus\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.dll
+D:\PowerKeeper\src\PowerKeeper.Infra.Bus\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Bus.pdb

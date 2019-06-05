@@ -39,7 +39,7 @@ namespace PowerKeeper.Infra.Tool.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Util.Properties.R", typeof(R).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sansunt.Tools.Properties.R", typeof(R).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

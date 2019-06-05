@@ -23,7 +23,7 @@ namespace PowerKeeper.Infra.Tool.Helpers {
         /// </summary>
         /// <param name="dateTime">时间</param>
         public static void SetTime( string dateTime ) {
-            _dateTime = PowerKeeper.Infra.Tool.Helpers.Convert.ToDateOrNull( dateTime );
+            _dateTime =PowerKeeper.Infra.Tool.Helpers.Convert.ToDateOrNull( dateTime );
         }
 
         /// <summary>

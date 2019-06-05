@@ -124,7 +124,7 @@ namespace PowerKeeper.Infra.Tool.Randoms
         /// <typeparam name="TEnum">枚举类型</typeparam>
         public TEnum GenerateEnum<TEnum>()
         {
-            var list = PowerKeeper.Infra.Tool.Helpers.Enum.GetItems<TEnum>();
+            var list =PowerKeeper.Infra.Tool.Helpers.Enum.GetItems<TEnum>();
             int index = _random.Generate(0, list.Count);
             return PowerKeeper.Infra.Tool.Helpers.Enum.Parse<TEnum>(list[index].Value);
         }

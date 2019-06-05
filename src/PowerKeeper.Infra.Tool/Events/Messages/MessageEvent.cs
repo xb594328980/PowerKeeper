@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using PowerKeeper.Infra.Tool.Helpers;
+using System.Text;
 
 namespace PowerKeeper.Infra.Tool.Events.Messages {
     /// <summary>
@@ -31,7 +32,7 @@ namespace PowerKeeper.Infra.Tool.Events.Messages {
                 result.AppendLine( $"发送目标:{Target}" );
             if( string.IsNullOrWhiteSpace( Callback ) == false )
                 result.AppendLine( $"回调:{Callback}" );
-            result.Append( $"事件数据：{PowerKeeper.Infra.Tool.Helpers.Json.ToJson( Data )}" );
+            result.Append( $"事件数据：{Json.ToJson( Data )}" );
             return result.ToString();
         }
     }

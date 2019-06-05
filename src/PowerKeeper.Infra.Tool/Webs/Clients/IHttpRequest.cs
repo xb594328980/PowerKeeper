@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -22,6 +23,8 @@ namespace PowerKeeper.Infra.Tool.Webs.Clients {
         /// </summary>
         /// <typeparam name="TResult">返回结果类型</typeparam>
         Task<TResult> ResultFromJsonAsync<TResult>();
+
+
     }
 
     /// <summary>

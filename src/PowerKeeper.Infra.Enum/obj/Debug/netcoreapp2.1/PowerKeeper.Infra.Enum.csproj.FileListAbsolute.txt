@@ -6,3 +6,11 @@ E:\PowerKeeper-master\src\PowerKeeper.Infra.Enum\obj\Debug\netcoreapp2.1\PowerKe
 E:\PowerKeeper-master\src\PowerKeeper.Infra.Enum\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.AssemblyInfo.cs
 E:\PowerKeeper-master\src\PowerKeeper.Infra.Enum\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.dll
 E:\PowerKeeper-master\src\PowerKeeper.Infra.Enum\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.pdb
+D:\PowerKeeper\src\PowerKeeper.Infra.Enum\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.deps.json
+D:\PowerKeeper\src\PowerKeeper.Infra.Enum\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.dll
+D:\PowerKeeper\src\PowerKeeper.Infra.Enum\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.pdb
+D:\PowerKeeper\src\PowerKeeper.Infra.Enum\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.csproj.CoreCompileInputs.cache
+D:\PowerKeeper\src\PowerKeeper.Infra.Enum\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.AssemblyInfoInputs.cache
+D:\PowerKeeper\src\PowerKeeper.Infra.Enum\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.AssemblyInfo.cs
+D:\PowerKeeper\src\PowerKeeper.Infra.Enum\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.dll
+D:\PowerKeeper\src\PowerKeeper.Infra.Enum\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Enum.pdb

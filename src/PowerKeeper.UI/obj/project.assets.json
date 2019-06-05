@@ -11690,11 +11690,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PowerKeeper-master\\src\\PowerKeeper.UI\\PowerKeeper.UI.csproj",
+      "projectUniqueName": "D:\\PowerKeeper\\src\\PowerKeeper.UI\\PowerKeeper.UI.csproj",
       "projectName": "PowerKeeper.UI",
-      "projectPath": "E:\\PowerKeeper-master\\src\\PowerKeeper.UI\\PowerKeeper.UI.csproj",
+      "projectPath": "D:\\PowerKeeper\\src\\PowerKeeper.UI\\PowerKeeper.UI.csproj",
       "packagesPath": "C:\\Users\\邢愽\\.nuget\\packages\\",
-      "outputPath": "E:\\PowerKeeper-master\\src\\PowerKeeper.UI\\obj\\",
+      "outputPath": "D:\\PowerKeeper\\src\\PowerKeeper.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

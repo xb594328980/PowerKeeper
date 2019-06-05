@@ -29,7 +29,7 @@ namespace PowerKeeper.Infra.Tool.Helpers {
         /// 创建标识
         /// </summary>
         public static string ObjectId() {
-            return string.IsNullOrWhiteSpace( _id ) ? PowerKeeper.Infra.Tool.Helpers.Internal.ObjectId.GenerateNewStringId() : _id;
+            return string.IsNullOrWhiteSpace( _id ) ?PowerKeeper.Infra.Tool.Helpers.Internal.ObjectId.GenerateNewStringId() : _id;
         }
 
         /// <summary>

@@ -693,11 +693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PowerKeeper-master\\src\\PowerKeeper.Infra.Enum\\PowerKeeper.Infra.Enum.csproj",
+      "projectUniqueName": "D:\\PowerKeeper\\src\\PowerKeeper.Infra.Enum\\PowerKeeper.Infra.Enum.csproj",
       "projectName": "PowerKeeper.Infra.Enum",
-      "projectPath": "E:\\PowerKeeper-master\\src\\PowerKeeper.Infra.Enum\\PowerKeeper.Infra.Enum.csproj",
+      "projectPath": "D:\\PowerKeeper\\src\\PowerKeeper.Infra.Enum\\PowerKeeper.Infra.Enum.csproj",
       "packagesPath": "C:\\Users\\邢愽\\.nuget\\packages\\",
-      "outputPath": "E:\\PowerKeeper-master\\src\\PowerKeeper.Infra.Enum\\obj\\",
+      "outputPath": "D:\\PowerKeeper\\src\\PowerKeeper.Infra.Enum\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

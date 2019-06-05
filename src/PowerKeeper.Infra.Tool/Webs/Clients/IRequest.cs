@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
@@ -112,5 +113,10 @@ namespace PowerKeeper.Infra.Tool.Webs.Clients {
         /// 获取结果
         /// </summary>
         Task<string> ResultAsync();
+
+        /// <summary>
+        /// 获取结果
+        /// </summary>
+        Task<byte[]> ByteResultAsync();
     }
 }

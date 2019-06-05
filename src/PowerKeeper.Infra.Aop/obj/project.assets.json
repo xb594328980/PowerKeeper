@@ -693,11 +693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PowerKeeper-master\\src\\PowerKeeper.Infra.Aop\\PowerKeeper.Infra.Aop.csproj",
+      "projectUniqueName": "D:\\PowerKeeper\\src\\PowerKeeper.Infra.Aop\\PowerKeeper.Infra.Aop.csproj",
       "projectName": "PowerKeeper.Infra.Aop",
-      "projectPath": "E:\\PowerKeeper-master\\src\\PowerKeeper.Infra.Aop\\PowerKeeper.Infra.Aop.csproj",
+      "projectPath": "D:\\PowerKeeper\\src\\PowerKeeper.Infra.Aop\\PowerKeeper.Infra.Aop.csproj",
       "packagesPath": "C:\\Users\\邢愽\\.nuget\\packages\\",
-      "outputPath": "E:\\PowerKeeper-master\\src\\PowerKeeper.Infra.Aop\\obj\\",
+      "outputPath": "D:\\PowerKeeper\\src\\PowerKeeper.Infra.Aop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

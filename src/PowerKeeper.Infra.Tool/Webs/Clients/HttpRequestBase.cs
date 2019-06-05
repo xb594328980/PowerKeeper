@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -314,6 +315,16 @@ namespace PowerKeeper.Infra.Tool.Webs.Clients
             var result = await response.Content.ReadAsStringAsync();
             SendAfter(result, response);
             return result;
+        }
+
+        /// <summary>
+        /// 获取结果
+        /// </summary>
+        public async Task<byte[]> ByteResultAsync()
+        {
+            SendBefore();
+            var response = await SendAsync();
+            return response.Content.ReadAsByteArrayAsync().Result;
         }
 
         #endregion

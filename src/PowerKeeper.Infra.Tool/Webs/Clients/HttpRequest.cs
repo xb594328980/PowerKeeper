@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -58,6 +59,9 @@ namespace PowerKeeper.Infra.Tool.Webs.Clients {
         public async Task<TResult> ResultFromJsonAsync<TResult>() {
             return PowerKeeper.Infra.Tool.Helpers.Json.ToObject<TResult>( await ResultAsync() );
         }
+
+    
+
     }
 
     /// <summary>

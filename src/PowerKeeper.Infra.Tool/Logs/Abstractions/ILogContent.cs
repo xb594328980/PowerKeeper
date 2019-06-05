@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using PowerKeeper.Infra.Tool.Exceptions;
 
 namespace PowerKeeper.Infra.Tool.Logs.Abstractions {
@@ -57,6 +58,6 @@ namespace PowerKeeper.Infra.Tool.Logs.Abstractions {
         /// <summary>
         /// 异常消息
         /// </summary>
-        Warning Exception { get; set; }
+        Exception Exception { get; set; }
     }
 }

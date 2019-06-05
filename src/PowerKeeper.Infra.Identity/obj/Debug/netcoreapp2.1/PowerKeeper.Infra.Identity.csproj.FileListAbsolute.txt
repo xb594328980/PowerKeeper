@@ -10,3 +10,15 @@ E:\PowerKeeper-master\src\PowerKeeper.Infra.Identity\obj\Debug\netcoreapp2.1\Pow
 E:\PowerKeeper-master\src\PowerKeeper.Infra.Identity\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.csproj.CopyComplete
 E:\PowerKeeper-master\src\PowerKeeper.Infra.Identity\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.dll
 E:\PowerKeeper-master\src\PowerKeeper.Infra.Identity\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.pdb
+D:\PowerKeeper\src\PowerKeeper.Infra.Identity\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.deps.json
+D:\PowerKeeper\src\PowerKeeper.Infra.Identity\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.dll
+D:\PowerKeeper\src\PowerKeeper.Infra.Identity\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.pdb
+D:\PowerKeeper\src\PowerKeeper.Infra.Identity\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.dll
+D:\PowerKeeper\src\PowerKeeper.Infra.Identity\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.pdb
+D:\PowerKeeper\src\PowerKeeper.Infra.Identity\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.csprojAssemblyReference.cache
+D:\PowerKeeper\src\PowerKeeper.Infra.Identity\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.csproj.CoreCompileInputs.cache
+D:\PowerKeeper\src\PowerKeeper.Infra.Identity\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.AssemblyInfoInputs.cache
+D:\PowerKeeper\src\PowerKeeper.Infra.Identity\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.AssemblyInfo.cs
+D:\PowerKeeper\src\PowerKeeper.Infra.Identity\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.csproj.CopyComplete
+D:\PowerKeeper\src\PowerKeeper.Infra.Identity\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.dll
+D:\PowerKeeper\src\PowerKeeper.Infra.Identity\obj\Debug\netcoreapp2.1\PowerKeeper.Infra.Identity.pdb

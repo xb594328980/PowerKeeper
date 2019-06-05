@@ -82,18 +82,25 @@ namespace PowerKeeper.Infra.Tool.Helpers {
             return this;
         }
 
+        #region RemoveEnd(移除末尾字符串)
+
         /// <summary>
         /// 移除末尾字符串
         /// </summary>
-        /// <param name="end">末尾字符串</param>
-        public String RemoveEnd( string end ) {
-            string result = Builder.ToString();
-            if( !result.EndsWith( end ) )
-                return this;
-            Builder = new StringBuilder( result.TrimEnd( end.ToCharArray() ) );
-            return this;
+        /// <param name="value">值</param>
+        /// <param name="removeValue">要移除的值</param>
+        public static string RemoveEnd(string value, string removeValue)
+        {
+            if (string.IsNullOrWhiteSpace(value))
+                return string.Empty;
+            if (string.IsNullOrWhiteSpace(removeValue))
+                return value.SafeString();
+            if (value.ToLower().EndsWith(removeValue.ToLower()))
+                return value.Remove(value.Length - removeValue.Length, removeValue.Length);
+            return value;
         }
 
+        #endregion
         /// <summary>
         /// 清空字符串
         /// </summary>

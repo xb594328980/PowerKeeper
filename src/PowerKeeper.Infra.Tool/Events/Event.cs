@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PowerKeeper.Infra.Tool.Helpers;
+using System;
 using System.Text;
 
 namespace PowerKeeper.Infra.Tool.Events {
@@ -31,7 +32,7 @@ namespace PowerKeeper.Infra.Tool.Events {
             StringBuilder result = new StringBuilder();
             result.AppendLine( $"事件标识: {Id}" );
             result.AppendLine( $"事件时间: {Time.ToMillisecondString()}" );
-            result.Append( $"事件数据：{PowerKeeper.Infra.Tool.Helpers.Json.ToJson( this )}" );
+            result.Append( $"事件数据：{ Json.ToJson( this )}" );
             return result.ToString();
         }
     }

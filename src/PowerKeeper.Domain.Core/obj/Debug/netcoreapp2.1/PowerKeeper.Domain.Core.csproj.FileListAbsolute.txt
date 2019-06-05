@@ -7,3 +7,11 @@ E:\PowerKeeper-master\src\PowerKeeper.Domain.Core\obj\Debug\netcoreapp2.1\PowerK
 E:\PowerKeeper-master\src\PowerKeeper.Domain.Core\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.AssemblyInfo.cs
 E:\PowerKeeper-master\src\PowerKeeper.Domain.Core\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.dll
 E:\PowerKeeper-master\src\PowerKeeper.Domain.Core\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.pdb
+D:\PowerKeeper\src\PowerKeeper.Domain.Core\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.deps.json
+D:\PowerKeeper\src\PowerKeeper.Domain.Core\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.dll
+D:\PowerKeeper\src\PowerKeeper.Domain.Core\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.pdb
+D:\PowerKeeper\src\PowerKeeper.Domain.Core\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.csproj.CoreCompileInputs.cache
+D:\PowerKeeper\src\PowerKeeper.Domain.Core\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.AssemblyInfoInputs.cache
+D:\PowerKeeper\src\PowerKeeper.Domain.Core\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.AssemblyInfo.cs
+D:\PowerKeeper\src\PowerKeeper.Domain.Core\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.dll
+D:\PowerKeeper\src\PowerKeeper.Domain.Core\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.pdb

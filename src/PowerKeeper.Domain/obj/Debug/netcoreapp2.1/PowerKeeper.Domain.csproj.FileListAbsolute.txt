@@ -14,3 +14,17 @@ E:\PowerKeeper-master\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper
 E:\PowerKeeper-master\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.csproj.CopyComplete
 E:\PowerKeeper-master\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.dll
 E:\PowerKeeper-master\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.pdb
+D:\PowerKeeper\src\PowerKeeper.Domain\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.deps.json
+D:\PowerKeeper\src\PowerKeeper.Domain\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.dll
+D:\PowerKeeper\src\PowerKeeper.Domain\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.pdb
+D:\PowerKeeper\src\PowerKeeper.Domain\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.dll
+D:\PowerKeeper\src\PowerKeeper.Domain\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.dll
+D:\PowerKeeper\src\PowerKeeper.Domain\bin\Debug\netcoreapp2.1\PowerKeeper.Domain.Core.pdb
+D:\PowerKeeper\src\PowerKeeper.Domain\bin\Debug\netcoreapp2.1\PowerKeeper.Infra.Tool.pdb
+D:\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.csprojAssemblyReference.cache
+D:\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.csproj.CoreCompileInputs.cache
+D:\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.AssemblyInfoInputs.cache
+D:\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.AssemblyInfo.cs
+D:\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.csproj.CopyComplete
+D:\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.dll
+D:\PowerKeeper\src\PowerKeeper.Domain\obj\Debug\netcoreapp2.1\PowerKeeper.Domain.pdb

@@ -25,6 +25,9 @@ using PowerKeeper.Application.EventSourcing;
 using PowerKeeper.Infra.Identity;
 using PowerKeeper.Infra.Tool.Dependency;
 using Module = Autofac.Module;
+using PowerKeeper.Infra.Tool.Cache.HttpRuntimeCache;
+using PowerKeeper.Infra.Tool.Cache;
+using Microsoft.EntityFrameworkCore;
 
 namespace PowerKeeper.Infra.IoC
 {
@@ -36,43 +39,37 @@ namespace PowerKeeper.Infra.IoC
     {
         protected override void Load(ContainerBuilder builder)
         {
+
+            #region 身份管理器
+            // 身份认证类型
+            builder.RegisterType<JwtIdentity>().As<IIdentity>().InstancePerLifetimeScope();
+            //身份管理器
             builder.RegisterType<IdentityManager>().InstancePerLifetimeScope();
-            // mediator 
+            #endregion
+            #region mediator
             builder.RegisterType<Mediator>().As<IMediator>().InstancePerLifetimeScope();
-
+            #endregion
+            #region 缓存
+            //builder.RegisterType<MyCacheFactory>().AsSelf();
+            builder.RegisterType<MemoryCacheClient>().As<ICache>().AsSelf();
+            #endregion
+            #region Application
             // 注入 Application 应用层
-            builder.RegisterAssemblyTypes(typeof(OfficeAppService).GetTypeInfo().Assembly).AsImplementedInterfaces().AsSelf().PropertiesAutowired();
-            //builder.RegisterType<OfficeAppService>().As<IOfficeAppService>();
-            // .InstancePerLifetimeScope().EnableInterfaceInterceptors().InterceptedBy(typeof(LogAOP));//可以直接替换拦截器;
-
-            builder.RegisterType<InMemoryBus>().As<IMediatorHandler>().InstancePerLifetimeScope();
-            builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerLifetimeScope();
-
+            builder.RegisterAssemblyTypes(typeof(OfficeAppService).GetTypeInfo().Assembly).Where(x => x.FullName.EndsWith("AppService")).AsImplementedInterfaces().AsSelf().PropertiesAutowired();
+            #endregion
+            #region Infra - Data
             // 注入 Infra - Data 基础设施数据层
-            //builder.RegisterType<OfficeRepository>().As<IOfficeRepository>();
+            builder.RegisterAssemblyTypes(typeof(OfficeRepository).GetTypeInfo().Assembly).Where(x => x.FullName.EndsWith("Repository")).AsImplementedInterfaces().PropertiesAutowired();
+            //DbContext
+            builder.RegisterType<PowerKeeperContext>().AsSelf().As<DbContext>().InstancePerLifetimeScope();
+            //Handler
+            builder.RegisterType<InMemoryBus>().As<IMediatorHandler>().InstancePerLifetimeScope();
+            //UnitOfWork
+            builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerLifetimeScope();
+            #endregion
 
-            builder.RegisterAssemblyTypes(typeof(OfficeRepository).GetTypeInfo().Assembly).AsImplementedInterfaces().AsSelf().PropertiesAutowired();//Repository
 
-            builder.RegisterType<PowerKeeperContext>().InstancePerLifetimeScope();
 
-            //将命令模型和命令处理程序匹配注入
-            builder.RegisterType<OfficeCommandHandler>().As<IRequestHandler<CreateOfficeCommand, Unit>>();
-            builder.RegisterType<OfficeCommandHandler>().As<IRequestHandler<UpdateOfficeCommand, Unit>>();
-            builder.RegisterType<OfficeCommandHandler>().As<IRequestHandler<RemoveOfficeCommand, Unit>>();
-
-            // Domain - Events
-            // 将事件模型和事件处理程序匹配注入
-            builder.RegisterType<OfficeEventHandler>().As<INotificationHandler<OfficeCreatedEvent>>();
-            builder.RegisterType<OfficeEventHandler>().As<INotificationHandler<OfficeUpdatedEvent>>();
-            builder.RegisterType<OfficeEventHandler>().As<INotificationHandler<OfficeRemovedEvent>>();
-
-            // 将事件模型和事件处理程序匹配注入
-            builder.RegisterType<DomainNotificationHandler>().As<INotificationHandler<DomainNotification>>().InstancePerLifetimeScope();
-
-            //event sourceing
-            builder.RegisterType<SqlEventStoreService>().As<IEventStoreService>();
-            builder.RegisterType<EventStoreRepository>().As<IEventStoreRepository>();
-            builder.RegisterType<SQLEventStoreContext>().InstancePerLifetimeScope();
         }
 
         public static void RegisterServices(IServiceCollection services)

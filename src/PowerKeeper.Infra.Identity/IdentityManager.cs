@@ -136,5 +136,23 @@ namespace PowerKeeper.Infra.Identity
             _identity.AddIdentitySetup(services, SecurityKey);
         }
 
+        /// <summary>
+        /// 获取身份信息
+        /// </summary>
+        /// <returns></returns>
+        public UserInfoPrincipal UserInfo
+        {
+            get
+            {
+                if (_context == null)
+                    throw new Exception("未登录");
+                string authorizationStr = _context.Request.Headers["Authorization"];
+                SecurityToken validatedToken = null;
+                var result = _identity.ProcessingAuthorization(SecurityKey, authorizationStr, out validatedToken);
+                if (result == null || !result.Claims.Any())
+                    throw new Exception("未登录");
+                return new UserInfoPrincipal(result);
+            }
+        }
     }
 }

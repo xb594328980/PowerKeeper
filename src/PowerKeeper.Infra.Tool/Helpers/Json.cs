@@ -1,18 +1,22 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
-namespace PowerKeeper.Infra.Tool.Helpers {
+namespace PowerKeeper.Infra.Tool.Helpers
+{
     /// <summary>
     /// Json操作
     /// </summary>
-    public static class Json {
+    public static class Json
+    {
         /// <summary>
         /// 将Json字符串转换为对象
         /// </summary>
         /// <param name="json">Json字符串</param>
-        public static T ToObject<T>( string json ) {
-            if ( string.IsNullOrWhiteSpace( json ) )
+        public static T ToObject<T>(this string json)
+        {
+            if (string.IsNullOrWhiteSpace(json))
                 return default(T);
-            return JsonConvert.DeserializeObject<T>( json );
+            return JsonConvert.DeserializeObject<T>(json);
         }
 
         /// <summary>
@@ -20,12 +24,17 @@ namespace PowerKeeper.Infra.Tool.Helpers {
         /// </summary>
         /// <param name="target">目标对象</param>
         /// <param name="isConvertToSingleQuotes">是否将双引号转成单引号</param>
-        public static string ToJson( object target,bool isConvertToSingleQuotes = false ) {
-            if ( target == null )
+        /// <param name="camelCase">是否开启骆驼命名序列化属性，默认为false</param>
+        public static string ToJson(this object target, bool isConvertToSingleQuotes = false, bool camelCase = false)
+        {
+            if (target == null)
                 return "{}";
-            var result = JsonConvert.SerializeObject( target );
-            if ( isConvertToSingleQuotes )
-                result = result.Replace( "\"", "'" );
+            JsonSerializerSettings settings = new JsonSerializerSettings();
+            if (camelCase)
+                settings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            var result = JsonConvert.SerializeObject(target, settings);
+            if (isConvertToSingleQuotes)
+                result = result.Replace("\"", "'");
             return result;
         }
     }

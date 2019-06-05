@@ -2181,11 +2181,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PowerKeeper-master\\src\\PowerKeeper.Domain.Core\\PowerKeeper.Domain.Core.csproj",
+      "projectUniqueName": "D:\\PowerKeeper\\src\\PowerKeeper.Domain.Core\\PowerKeeper.Domain.Core.csproj",
       "projectName": "PowerKeeper.Domain.Core",
-      "projectPath": "E:\\PowerKeeper-master\\src\\PowerKeeper.Domain.Core\\PowerKeeper.Domain.Core.csproj",
+      "projectPath": "D:\\PowerKeeper\\src\\PowerKeeper.Domain.Core\\PowerKeeper.Domain.Core.csproj",
       "packagesPath": "C:\\Users\\邢愽\\.nuget\\packages\\",
-      "outputPath": "E:\\PowerKeeper-master\\src\\PowerKeeper.Domain.Core\\obj\\",
+      "outputPath": "D:\\PowerKeeper\\src\\PowerKeeper.Domain.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

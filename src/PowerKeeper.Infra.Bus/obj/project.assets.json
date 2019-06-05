@@ -2199,11 +2199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PowerKeeper-master\\src\\PowerKeeper.Infra.Bus\\PowerKeeper.Infra.Bus.csproj",
+      "projectUniqueName": "D:\\PowerKeeper\\src\\PowerKeeper.Infra.Bus\\PowerKeeper.Infra.Bus.csproj",
       "projectName": "PowerKeeper.Infra.Bus",
-      "projectPath": "E:\\PowerKeeper-master\\src\\PowerKeeper.Infra.Bus\\PowerKeeper.Infra.Bus.csproj",
+      "projectPath": "D:\\PowerKeeper\\src\\PowerKeeper.Infra.Bus\\PowerKeeper.Infra.Bus.csproj",
       "packagesPath": "C:\\Users\\邢愽\\.nuget\\packages\\",
-      "outputPath": "E:\\PowerKeeper-master\\src\\PowerKeeper.Infra.Bus\\obj\\",
+      "outputPath": "D:\\PowerKeeper\\src\\PowerKeeper.Infra.Bus\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2222,8 +2222,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\PowerKeeper-master\\src\\PowerKeeper.Domain.Core\\PowerKeeper.Domain.Core.csproj": {
-              "projectPath": "E:\\PowerKeeper-master\\src\\PowerKeeper.Domain.Core\\PowerKeeper.Domain.Core.csproj"
+            "D:\\PowerKeeper\\src\\PowerKeeper.Domain.Core\\PowerKeeper.Domain.Core.csproj": {
+              "projectPath": "D:\\PowerKeeper\\src\\PowerKeeper.Domain.Core\\PowerKeeper.Domain.Core.csproj"
             }
           }
         }

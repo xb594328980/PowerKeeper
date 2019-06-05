@@ -5741,11 +5741,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PowerKeeper-master\\src\\PowerKeeper.Tests\\PowerKeeper.Tests.csproj",
+      "projectUniqueName": "D:\\PowerKeeper\\src\\PowerKeeper.Tests\\PowerKeeper.Tests.csproj",
       "projectName": "PowerKeeper.Tests",
-      "projectPath": "E:\\PowerKeeper-master\\src\\PowerKeeper.Tests\\PowerKeeper.Tests.csproj",
+      "projectPath": "D:\\PowerKeeper\\src\\PowerKeeper.Tests\\PowerKeeper.Tests.csproj",
       "packagesPath": "C:\\Users\\邢愽\\.nuget\\packages\\",
-      "outputPath": "E:\\PowerKeeper-master\\src\\PowerKeeper.Tests\\obj\\",
+      "outputPath": "D:\\PowerKeeper\\src\\PowerKeeper.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
