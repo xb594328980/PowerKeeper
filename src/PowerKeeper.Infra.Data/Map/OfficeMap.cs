@@ -28,7 +28,7 @@ namespace PowerKeeper.Infra.Data.Map
                 .IsRequired();
 
             builder.Property(c => c.OfficePhone)
-                .HasColumnType("varchar(64)")
+                .HasColumnType("varchar(32)")
                 .HasColumnName("office_phone");
 
             builder.Property(c => c.OfficeCode)
@@ -45,17 +45,13 @@ namespace PowerKeeper.Infra.Data.Map
                 .IsRequired();
 
             builder.Property(c => c.ParentIds)
-                .HasColumnType("varchar(2000)")
+                .HasColumnType("varchar(1024)")
                 .HasColumnName("parent_ids")
                 .IsRequired();
 
             builder.Property(c => c.CreateBy)
                 .HasColumnType("varchar(64)")
                 .HasColumnName("create_by")
-                .IsRequired();
-
-            builder.Property(c => c.DelFlag)
-                .HasColumnName("del_flag")
                 .IsRequired();
 
             builder.Property(c => c.CreateDate)
@@ -71,8 +67,12 @@ namespace PowerKeeper.Infra.Data.Map
             .HasColumnName("update_date");
 
             builder.Property(c => c.Remark)
-                .HasColumnType("varchar(512)")
+                .HasColumnType("varchar(1024)")
                 .HasColumnName("remark");
+
+            builder.Property(c => c.DelFlag)
+                .HasColumnName("del_flag")
+                .IsRequired();
         }
     }
 }

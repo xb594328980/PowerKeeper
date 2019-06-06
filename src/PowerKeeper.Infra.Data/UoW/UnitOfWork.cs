@@ -15,10 +15,16 @@ namespace PowerKeeper.Infra.Data.UoW
         //数据库上下文
         private readonly PowerKeeperContext _context;
 
+        /// <summary>
+        /// 跟踪号
+        /// </summary>
+        public string TraceId { get; set; }
+
         //构造函数注入
         public UnitOfWork(PowerKeeperContext context)
         {
             _context = context;
+            TraceId = Guid.NewGuid().ToString();
         }
 
         //上下文提交
