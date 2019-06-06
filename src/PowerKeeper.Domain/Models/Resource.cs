@@ -52,6 +52,7 @@ namespace PowerKeeper.Domain.Models
             UpdateBy = updateBy;
         }
 
+  
         /// <summary>
         /// 父级id
         /// </summary>

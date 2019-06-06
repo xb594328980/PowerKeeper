@@ -6,15 +6,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PowerKeeper.Domain.Core\PowerKeeper.Domain.Core.csproj" />
+    <ProjectReference Include="..\PowerKeeper.Infra.Enum\PowerKeeper.Infra.Enum.csproj" />
     <ProjectReference Include="..\PowerKeeper.Infra.Tool\PowerKeeper.Infra.Tool.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Commands\Application\" />
     <Folder Include="Commands\Dict\" />
-    <Folder Include="Commands\Resource\" />
-    <Folder Include="Commands\Role\" />
-    <Folder Include="Commands\Staff\" />
     <Folder Include="Commands\Systemes\" />
     <Folder Include="Events\Application\" />
     <Folder Include="Events\Dict\" />
@@ -24,9 +22,6 @@
     <Folder Include="Events\Systemes\" />
     <Folder Include="Validations\Application\" />
     <Folder Include="Validations\Dict\" />
-    <Folder Include="Validations\Resource\" />
-    <Folder Include="Validations\Role\" />
-    <Folder Include="Validations\Staff\" />
     <Folder Include="Validations\Systemes\" />
   </ItemGroup>
 

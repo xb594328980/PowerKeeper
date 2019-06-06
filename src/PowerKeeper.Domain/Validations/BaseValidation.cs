@@ -2,8 +2,10 @@
 using PowerKeeper.Domain.Core.Commands;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using PowerKeeper.Infra.Tool.Helpers;
+using Enum = PowerKeeper.Infra.Tool.Helpers.Enum;
 
 namespace PowerKeeper.Domain.Validations
 {
@@ -12,7 +14,7 @@ namespace PowerKeeper.Domain.Validations
     /// <remarks>create by xingbo 18/12/20</remarks>
     /// </summary>
     /// <typeparam name="T">命令模型</typeparam>
-    public abstract  class BaseValidation<T> : AbstractValidator<T> where T : Command
+    public abstract class BaseValidation<T> : AbstractValidator<T> where T : Command
     {
         /// <summary>
         /// 验证电话
@@ -65,6 +67,16 @@ namespace PowerKeeper.Domain.Validations
         protected bool IsPostalcode(string str_postalcode)
         {
             return System.Text.RegularExpressions.Regex.IsMatch(str_postalcode, @"^\d{6}$");
+        }
+
+        protected bool HavePhone(string phone)
+        {
+            return string.IsNullOrEmpty(phone) || IsTelephone(phone) || IsMobile(phone);
+        }
+
+        protected bool IsEnumVal<EnumInstance>(int val) where EnumInstance : struct
+        {
+            return Enum.GetItems<EnumInstance>().Select(x => System.Convert.ToInt32(x.Value)).Any(x => x == val); 
         }
     }
 }

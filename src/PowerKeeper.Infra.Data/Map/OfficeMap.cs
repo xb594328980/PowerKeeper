@@ -17,6 +17,7 @@ namespace PowerKeeper.Infra.Data.Map
         {
             builder.ToTable("sys_office");
             builder.HasKey(x => x.Id);
+            builder.HasQueryFilter(x => x.DelFlag == 0);
             //实体属性Map
             builder.Property(c => c.Id)
                 .HasColumnType("varchar(64)")

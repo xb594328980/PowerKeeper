@@ -97,9 +97,6 @@ namespace PowerKeeper.Domain.Validations.Office
 
 
 
-        protected bool HavePhone(string phone)
-        {
-            return string.IsNullOrEmpty(phone) || IsTelephone(phone) || IsMobile(phone);
-        }
+
     }
 }
