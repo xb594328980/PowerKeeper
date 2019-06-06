@@ -25,9 +25,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PowerKeeper.Infra.Config\PowerKeeper.Infra.Config.csproj" />
     <ProjectReference Include="..\PowerKeeper.Infra.Data\PowerKeeper.Infra.Data.csproj" />
     <ProjectReference Include="..\PowerKeeper.Infra.Identity\PowerKeeper.Infra.Identity.csproj" />
     <ProjectReference Include="..\PowerKeeper.Infra.IoC\PowerKeeper.Infra.IoC.csproj" />
+    <ProjectReference Include="..\PowerKeeper.Infra.Log\PowerKeeper.Infra.Log.csproj" />
     <ProjectReference Include="..\PowerKeeper.Infra.Mapper\PowerKeeper.Infra.Mapper.csproj" />
   </ItemGroup>
 

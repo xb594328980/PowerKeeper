@@ -7,6 +7,10 @@ using PowerKeeper.Domain.Core.Notifications;
 using PowerKeeper.Domain.Notifications;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Cors;
+using PowerKeeper.Api.App_Helper;
+using PowerKeeper.Api.Filters;
+using PowerKeeper.Infra.Enum;
 
 namespace PowerKeeper.Api.Controllers
 {
@@ -14,6 +18,10 @@ namespace PowerKeeper.Api.Controllers
     /// 父级控制器
     /// <remarks>create by xingbo 18/12/20</remarks>
     /// </summary>
+    [EnableCors("AllowSameDomain")]
+    [Route("[controller]")]
+    [ApiController]
+    [ServiceFilter(typeof(ErrorAttribute))]
     public class ApiController : ControllerBase
     {
         private readonly DomainNotificationHandler _notifications;
@@ -48,22 +56,32 @@ namespace PowerKeeper.Api.Controllers
         /// </summary>
         /// <param name="result">结果</param>
         /// <returns></returns>
-        protected new IActionResult Response(object result = null)
+        protected new AjaxResult<T> Response<T>(T result = default(T))
         {
             if (IsValidOperation())
             {
-                return Ok(new
-                {
-                    success = true,
-                    data = result
-                });
+                return new AjaxResult<T>(result);
             }
+            return new AjaxResult<T>(ErrorCodeEnum.OperationFailed, _notifications.GetNotifications().Select(n => n.Value));
+        }
 
-            return BadRequest(new
+
+        /// <summary>
+        /// 返回错误提示
+        /// </summary>
+        /// <typeparam name="T">默认返回值类型</typeparam>
+        /// <param name="errorCode">错误代码</param>
+        /// <param name="errorMsg">错误信息</param>
+        /// <returns></returns>
+        protected new AjaxResult<T> Response<T>(ErrorCodeEnum errorCode, string errorMsg)
+        {
+            if (IsValidOperation())
             {
-                success = false,
-                errors = _notifications.GetNotifications().Select(n => n.Value)
-            });
+                return new AjaxResult<T>(errorCode, errorMsg);
+            }
+            var errMsg = _notifications.GetNotifications().Select(n => n.Value).ToList();
+            errMsg.Add(errorMsg);
+            return new AjaxResult<T>(errorCode, errMsg);
         }
 
         /// <summary>
