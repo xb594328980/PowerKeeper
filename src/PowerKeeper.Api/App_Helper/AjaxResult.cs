@@ -45,7 +45,7 @@ namespace PowerKeeper.Api.App_Helper
         /// </summary>
         /// <param name="errorCode"></param>
         /// <param name="errorMsg"></param>
-        public AjaxResult(ErrorCodeEnum errorCode, dynamic errorMsg)
+        public AjaxResult(ErrorCodeEnum errorCode, string errorMsg)
         {
             Data = new AjaxBackData<T>(errorCode, errorMsg);
         }
@@ -94,13 +94,13 @@ namespace PowerKeeper.Api.App_Helper
         {
             ErrorCode = errorCode;
             ErrorMsg = errorMsg;
-            Data = default(T);
+            Data = null;
         }
         public AjaxBackData(Exception ex)
         {
             ErrorCode = ErrorCodeEnum.SystemException;
             ErrorMsg = "系统异常(" + ex.Message + ")";
-            Data = default(T);
+            Data = null;
         }
         #endregion
 
@@ -118,7 +118,8 @@ namespace PowerKeeper.Api.App_Helper
         /// 数据
         /// </summary>
         [JsonProperty("data")]
-        public T Data { get; protected set; }
+        public dynamic Data { get; protected set; }
+       
     }
     #endregion
 

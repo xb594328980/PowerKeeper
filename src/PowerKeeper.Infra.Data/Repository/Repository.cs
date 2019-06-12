@@ -46,6 +46,11 @@ namespace PowerKeeper.Infra.Data.Repository
             return DbSet.Where(exp);
         }
 
+        public virtual int GetCount(Expression<Func<TEntity, bool>> exp)
+        {
+            return DbSet.Count(exp);
+        }
+
         public virtual void Update(params TEntity[] objList)
         {
             for (int i = 0; i < objList.Length; i++)

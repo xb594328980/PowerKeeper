@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Text;
 using PowerKeeper.Domain.Models;
 using PowerKeeper.Infra.Data.Map;
@@ -22,7 +23,12 @@ namespace PowerKeeper.Infra.Data.Context
         /// 日志工厂
         /// </summary>
         private readonly ILoggerFactory LoggerFactory;
+        private DbConnection _connection;
 
+        public PowerKeeperContext(DbConnection connection)
+        {
+            _connection = connection;
+        }
         public PowerKeeperContext() : base()
         {
             LoggerFactory = new LoggerFactory(new[] { new EfLogProvider() });
@@ -46,6 +52,12 @@ namespace PowerKeeper.Infra.Data.Context
         /// </summary>
         public DbSet<Resource> Resource { get; set; }
 
+        /// <summary>
+        /// 员工角色对应关系
+        /// create by xingbo 19/06/06
+        /// </summary>
+        public DbSet<StaffRole> StaffRole { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // 从 appsetting.json 中获取配置信息
@@ -53,9 +65,10 @@ namespace PowerKeeper.Infra.Data.Context
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json")
                 .Build();
-
-            //定义要使用的数据库
-            optionsBuilder.UseMySql(config.GetConnectionString("DefaultConnection"));
+            if (_connection != null)
+                optionsBuilder.UseMySql(_connection);
+            else
+                optionsBuilder.UseMySql(config.GetConnectionString("DefaultConnection"));  //定义要使用的数据库
             // "server=192.168.0.111;database=PowerKeeper;user=root;password=elisoft@123;");
             EnableLog(optionsBuilder);//配置日志
         }
@@ -66,6 +79,8 @@ namespace PowerKeeper.Infra.Data.Context
             modelBuilder.ApplyConfiguration(new StaffMap());
             modelBuilder.ApplyConfiguration(new ResourceMap());
             modelBuilder.ApplyConfiguration(new RoleMap());
+            modelBuilder.ApplyConfiguration(new StaffRoleMap());
+
 
             base.OnModelCreating(modelBuilder);
 

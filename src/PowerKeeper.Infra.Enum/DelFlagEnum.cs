@@ -11,9 +11,14 @@ namespace PowerKeeper.Infra.Enum
     /// </summary>
     public enum DelFlagEnum
     {
+        /// <summary>
+        /// 正常
+        /// </summary>
         [Description("正常")]
         Normal = 0,
-
+        /// <summary>
+        /// 已删除
+        /// </summary>
         [Description("已删除")]
         Deleted = 1
     }

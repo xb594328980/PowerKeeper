@@ -16,6 +16,7 @@ namespace PowerKeeper.Infra.Data.Map
         {
             builder.ToTable("sys_staff");
             builder.HasKey(x => x.Id);
+            builder.HasIndex("Account", "Password");
             builder.HasQueryFilter(x => x.DelFlag == 0);
             //实体属性Map
             builder.Property(c => c.Id)
@@ -50,11 +51,13 @@ namespace PowerKeeper.Infra.Data.Map
             builder.Property(c => c.Email)
                 .HasColumnType("varchar(64)")
                 .HasColumnName("email")
+                .HasDefaultValue("")
                 .IsRequired();
 
             builder.Property(c => c.Mobile)
                 .HasColumnType("varchar(16)")
                 .HasColumnName("mobile")
+                .HasDefaultValue("")
                 .IsRequired();
 
             builder.Property(c => c.State)

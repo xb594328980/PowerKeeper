@@ -55,11 +55,11 @@ namespace PowerKeeper.Infra.IoC
             #endregion
             #region Application
             // 注入 Application 应用层
-            builder.RegisterAssemblyTypes(typeof(OfficeAppService).GetTypeInfo().Assembly).Where(x => x.FullName.EndsWith("AppService")).AsImplementedInterfaces().AsSelf().PropertiesAutowired();
+            builder.RegisterAssemblyTypes(typeof(OfficeAppService).GetTypeInfo().Assembly).Where(x => x.FullName.EndsWith("AppService")).AsImplementedInterfaces().AsSelf().PropertiesAutowired(); ;
             #endregion
             #region Infra - Data
             // 注入 Infra - Data 基础设施数据层
-            builder.RegisterAssemblyTypes(typeof(OfficeRepository).GetTypeInfo().Assembly).Where(x => x.FullName.EndsWith("Repository")).AsImplementedInterfaces().PropertiesAutowired();
+            builder.RegisterAssemblyTypes(typeof(OfficeRepository).GetTypeInfo().Assembly).Where(x => x.FullName.EndsWith("Repository")).AsImplementedInterfaces().AsSelf().PropertiesAutowired();
             //DbContext
             builder.RegisterType<PowerKeeperContext>().AsSelf().As<DbContext>().InstancePerLifetimeScope();
             //Handler

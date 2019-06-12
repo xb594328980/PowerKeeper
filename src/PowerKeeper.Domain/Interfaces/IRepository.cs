@@ -34,6 +34,13 @@ namespace PowerKeeper.Domain.Interfaces
         /// <param name="exp">条件表达式</param>
         /// <returns></returns>
         IQueryable<TEntity> GetAll(Expression<Func<TEntity, bool>> exp);
+
+        /// <summary>
+        /// 获取条目数量
+        /// </summary>
+        /// <param name="exp">条件表达式</param>
+        /// <returns></returns>
+        int GetCount(Expression<Func<TEntity, bool>> exp);
         /// <summary>
         /// 根据对象进行更新
         /// </summary>

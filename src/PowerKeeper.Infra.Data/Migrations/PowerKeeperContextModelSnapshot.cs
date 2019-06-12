@@ -289,6 +289,25 @@ namespace PowerKeeper.Infra.Data.Migrations
 
                     b.ToTable("sys_staff");
                 });
+
+            modelBuilder.Entity("PowerKeeper.Domain.Models.StaffRole", b =>
+                {
+                    b.Property<string>("StaffId")
+                        .HasConversion(new ValueConverter<string, string>(v => default(string), v => default(string), new ConverterMappingHints(size: 36)))
+                        .HasColumnName("staff_id")
+                        .HasColumnType("varchar(64)");
+
+                    b.Property<string>("RoleId")
+                        .HasConversion(new ValueConverter<string, string>(v => default(string), v => default(string), new ConverterMappingHints(size: 36)))
+                        .HasColumnName("role_id")
+                        .HasColumnType("varchar(64)");
+
+                    b.HasKey("StaffId", "RoleId");
+
+                    b.HasAlternateKey("RoleId", "StaffId");
+
+                    b.ToTable("sys_staff_role");
+                });
 #pragma warning restore 612, 618
         }
     }

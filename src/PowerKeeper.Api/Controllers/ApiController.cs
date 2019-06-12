@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Cors;
 using PowerKeeper.Api.App_Helper;
 using PowerKeeper.Api.Filters;
 using PowerKeeper.Infra.Enum;
+using PowerKeeper.Infra.Tool;
 
 namespace PowerKeeper.Api.Controllers
 {
@@ -62,7 +63,7 @@ namespace PowerKeeper.Api.Controllers
             {
                 return new AjaxResult<T>(result);
             }
-            return new AjaxResult<T>(ErrorCodeEnum.OperationFailed, _notifications.GetNotifications().Select(n => n.Value));
+            return new AjaxResult<T>(ErrorCodeEnum.OperationFailed, _notifications.GetNotifications().Select(n => n.Value).Join("", "|"));
         }
 
 
@@ -81,7 +82,7 @@ namespace PowerKeeper.Api.Controllers
             }
             var errMsg = _notifications.GetNotifications().Select(n => n.Value).ToList();
             errMsg.Add(errorMsg);
-            return new AjaxResult<T>(errorCode, errMsg);
+            return new AjaxResult<T>(errorCode, errMsg.Join("", "|"));
         }
 
         /// <summary>

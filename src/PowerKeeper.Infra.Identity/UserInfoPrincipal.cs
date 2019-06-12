@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
+using PowerKeeper.Infra.Tool;
 
 namespace PowerKeeper.Infra.Identity
 {
@@ -46,13 +47,15 @@ namespace PowerKeeper.Infra.Identity
         public UserInfoPrincipal(ClaimsPrincipal principal)
         {
             var claims = principal.Claims;
-//            UserId = int.Parse(claims.Where(x=>x.Type== ClaimTypes.NameIdentifier));
-//            StaffName = claims[1];
-//            UserAccount = claims[2];
-//            OfficeId = claims[3].StringToList('|').ToArray();
-//            OfficeName = claims[4].StringToStringList('|').ToArray();
-//            StaffType = int.Parse(list[5]);
-//            RoleList = claims[6].StringToList('|').ToArray(); ;
+            if (claims == null || !claims.Any())
+                throw new AggregateException("身份参数不存在");
+            Name = claims.SingleOrDefault(x => x.Type == ClaimTypes.Name).Value;
+            StaffId = claims.SingleOrDefault(x => x.Type == CustomClaimTypes.StaffId).Value.ToGuid();
+            Account = claims.SingleOrDefault(x => x.Type == CustomClaimTypes.Account).Value;
+            OfficeId = claims.SingleOrDefault(x => x.Type == CustomClaimTypes.OfficeId).Value.ToGuid();
+            OfficeName = claims.SingleOrDefault(x => x.Type == CustomClaimTypes.OfficeName).Value;
+            StaffType = int.Parse(claims.SingleOrDefault(x => x.Type == CustomClaimTypes.StaffType).Value);
+            Roles = null; ;
         }
         public UserInfoPrincipal()
         {

@@ -17,7 +17,7 @@
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="4.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="4.0.1" />
@@ -26,7 +26,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PowerKeeper.Infra.Config\PowerKeeper.Infra.Config.csproj" />
-    <ProjectReference Include="..\PowerKeeper.Infra.Data\PowerKeeper.Infra.Data.csproj" />
     <ProjectReference Include="..\PowerKeeper.Infra.Identity\PowerKeeper.Infra.Identity.csproj" />
     <ProjectReference Include="..\PowerKeeper.Infra.IoC\PowerKeeper.Infra.IoC.csproj" />
     <ProjectReference Include="..\PowerKeeper.Infra.Log\PowerKeeper.Infra.Log.csproj" />

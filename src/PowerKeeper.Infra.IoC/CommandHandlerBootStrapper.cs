@@ -23,7 +23,7 @@ namespace Sansunt.HiCard.Infra.IoC
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterAssemblyTypes(typeof(OfficeCommandHandler).GetTypeInfo().Assembly).Where(x => x.FullName.Contains("CommandHandler")).AsImplementedInterfaces().PropertiesAutowired();
+            builder.RegisterAssemblyTypes(typeof(OfficeCommandHandler).GetTypeInfo().Assembly).Where(x => x.FullName.EndsWith("CommandHandler")).AsImplementedInterfaces().PropertiesAutowired();
             // 将事件模型和事件处理程序匹配注入
             builder.RegisterType<DomainNotificationHandler>().As<INotificationHandler<DomainNotification>>().InstancePerLifetimeScope();
         }
